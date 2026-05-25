@@ -50,6 +50,12 @@ const {
   Coord,
 } = require("./graphics");
 
+// Document format version for compatibility
+// (compatibility resolver is in `src/engine/document-compatibility-resolver.js`)
+// - Version 0: all documents before v6.3.4
+// - Version 1: Since v6.3.4
+const DOCUMENT_VERSION = 1;
+
 const { distanceToLine } = require("./geometry");
 
 // Constants for Layout
@@ -1314,7 +1320,9 @@ class Hyperlink extends Model {
   }
 
   getNodeText(options) {
-    if (this.reference instanceof type.Model) {
+    if (this.showName) {
+      return `(link: ${this.name || "(Hyperlink)"})`;
+    } else if (this.reference instanceof type.Model) {
       return "(link to " + this.reference.name + ")";
     } else if (this.url && this.url.length > 0) {
       return "(link to " + this.url + ")";
@@ -4400,10 +4408,24 @@ class Project extends ExtensibleModel {
   constructor() {
     super();
     this.name = "Untitled";
+
+    /** @member {string} */
     this.author = "";
+
+    /** @member {string} */
     this.company = "";
+
+    /** @member {string} */
     this.copyright = "";
+
+    /** @member {string} */
     this.version = "";
+
+    /**
+     * Document format version.
+     * @member {string}
+     */
+    this.documentVersion = DOCUMENT_VERSION;
   }
 
   canCopy() {
@@ -4442,6 +4464,7 @@ global.type.Diagram = Diagram;
 global.type.Project = Project;
 
 // Public Classes
+exports.DOCUMENT_VERSION = DOCUMENT_VERSION;
 exports.IdGenerator = IdGenerator;
 exports.Element = Element;
 exports.Model = Model;

@@ -263,39 +263,41 @@
 .about-dialog {
   
   .dialog-body {
-    min-width: 400px;
+    min-width: 200px;
   }
   
 }
 
-// Enter License Dialog
+// License Activation Dialog
 
-.enter-license-dialog {
-  
+.license-activation-dialog {
   .dialog-body {
-    min-width: 350px;
+    min-width: 384px;
     min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    .license-key {
-      width: 350px;
-      margin-top: 5px;
+    input {
+      width: 100%;
       font-family: "SourceCodePro";
+    }
+
+    .active-status {
+      color: @ui-widget-primary-color;
+      border: 1px solid @ui-widget-primary-color;
+      padding: 0.1rem 0.5rem;
+      border-radius: 1em;
+    }
+
+    .device-id {
+      border: 1px solid @widget-border-color;
+      border-radius: .5rem;
+      padding: 0.1rem 0.3rem;
+      opacity: 0.8;
     }
   }
 }
-
-// Unregistered Dialog
-
-.unregistered-dialog {
-  
-  .dialog-body {
-    max-width: 350px;
-    max-height: 300px;
-    min-height: 80px;
-  }
-  
-}
-
 
 // Tag Edit Dialog
 

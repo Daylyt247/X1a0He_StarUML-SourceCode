@@ -1,7 +1,8 @@
 {
   "name": "StarUML",
-  "version": "6.3.3",
-  "apiVersion": "6.3.3",
+  "productId": "STARUML.V7",
+  "version": "7.1.0",
+  "apiVersion": "7.1.0",
   "description": "A sophisticated software modeler",
   "copyright": "Copyright© MKLabs Co.,Ltd.",
   "homepage": "https://staruml.io",
@@ -10,13 +11,13 @@
     "email": "support@staruml.io"
   },
   "config": {
-    "product_id": "STARUML.V6",
     "app_title": "StarUML",
     "app_icon": "styles/icons/logo_64.png",
     "download_url": "https://staruml.io/download",
     "purchase_url": "https://staruml.io/buy",
     "validation_url": "https://staruml.io/api/license/validate",
     "documentation_url": "https://docs.staruml.io",
+    "license_manager_url": "https://staruml.io/license-manager",
     "forum_url": "https://groups.google.com/forum/#!forum/staruml",
     "release_notes_url": "https://staruml.io/download",
     "thirdparty_licenses_url": "https://staruml.io/thirdparty",
@@ -41,6 +42,7 @@
     "electron-settings": "^4.0.2",
     "electron-updater": "^4.3.9",
     "escape-html": "^1.0.3",
+    "express": "^5.1.0",
     "file-url": "^2.0.2",
     "filenamify": "^2.0.0",
     "fs-extra": "^9.0.1",
@@ -49,6 +51,7 @@
     "lodash": "^4.17.20",
     "markdown": "^0.5.0",
     "mustache": "^2.3.0",
+    "node-machine-id": "^1.1.12",
     "pdfkit": "^0.13.0",
     "pegjs": "^0.10.0",
     "request": "^2.81.0",
@@ -59,6 +62,7 @@
     "svgcanvas": "^2.5.0",
     "temp": "^0.8.3",
     "url-parse": "^1.4.7",
-    "yargs": "^17.2.1"
+    "yargs": "^17.2.1",
+    "zod": "^3.25.67"
   }
 }

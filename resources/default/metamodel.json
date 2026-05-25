@@ -420,7 +420,14 @@
         "type": "String",
         "visible": true
       },
-      { "name": "version", "kind": "prim", "type": "String", "visible": true }
+      { "name": "version", "kind": "prim", "type": "String", "visible": true },
+      {
+        "name": "documentVersion",
+        "kind": "prim",
+        "type": "Integer",
+        "default": 0,
+        "visible": true
+      }
     ]
   }
 }

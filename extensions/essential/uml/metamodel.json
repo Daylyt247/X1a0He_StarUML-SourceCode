@@ -1148,7 +1148,7 @@
   },
   "UMLUseCaseSubject": {
     "kind": "class",
-    "super": "UMLModelElement",
+    "super": "UMLSubsystem",
     "attributes": [
       {
         "name": "represent",

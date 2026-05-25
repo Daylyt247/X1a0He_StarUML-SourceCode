@@ -199,15 +199,23 @@ class TagValueEditorDialog {
       if (attr.type instanceof type.UMLEnumeration) {
         this.result.kind = "enum";
         this.result.options = attr.type.literals.map((l) => l.name).join("\n");
-        console.log(this.result);
       } else if (attr.type instanceof type.Model) {
         this.result.kind = "reference";
       } else if (typeof attr.type === "string") {
         const t = attr.type.toLowerCase();
         if (t === "number" || t === "integer") {
           this.result.kind = "number";
+          this.result.value = attr.defaultValue || 0;
+          this.$tagValueNumber.val(this.result.value);
         } else if (t === "boolean") {
           this.result.kind = "boolean";
+          this.result.checked =
+            attr.defaultValue && attr.defaultValue.toLowerCase() === "true";
+          this.$tagValueBoolean.val(this.result.checked ? "true" : "false");
+        } else if (t === "string") {
+          this.result.kind = "string";
+          this.result.value = attr.defaultValue || "";
+          this.$tagValueString.val(this.result.value);
         }
       }
       this.$tagName.val(this.result.name);

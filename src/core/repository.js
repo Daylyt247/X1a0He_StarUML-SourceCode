@@ -989,6 +989,9 @@ class OperationBuilder extends EventEmitter {
 class Repository extends EventEmitter {
   constructor() {
     super();
+
+    this._readonly = false;
+
     /**
      * Map for id to Element.
      * @private
@@ -1951,6 +1954,7 @@ class Repository extends EventEmitter {
    * @param {Object} operation
    */
   doOperation(operation) {
+    if (this._readonly) return;
     if (operation.ops.length > 0) {
       try {
         /**

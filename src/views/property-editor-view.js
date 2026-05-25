@@ -114,6 +114,8 @@ class PropertyEditorView extends EventEmitter {
   constructor() {
     super();
 
+    this._readonly = false;
+
     this.$view = null;
 
     /**
@@ -163,6 +165,14 @@ class PropertyEditorView extends EventEmitter {
     return attr;
   }
 
+  _triggerPropertyChanged(elems, field, value) {
+    if (this._readonly) {
+      this.show(elems);
+      return;
+    }
+    this.emit("propertyChanged", elems, field, value);
+  }
+
   /**
    * Define a text property
    *
@@ -189,7 +199,7 @@ class PropertyEditorView extends EventEmitter {
 
     let self = this;
     $edit.change(function () {
-      self.emit("propertyChanged", elems, field, $edit.val());
+      self._triggerPropertyChanged(elems, field, $edit.val());
     });
   }
 
@@ -219,7 +229,7 @@ class PropertyEditorView extends EventEmitter {
 
     let self = this;
     $edit.change(function () {
-      self.emit("propertyChanged", elems, field, $edit.val());
+      self._triggerPropertyChanged(elems, field, $edit.val());
     });
   }
 
@@ -247,7 +257,7 @@ class PropertyEditorView extends EventEmitter {
 
     let self = this;
     $check.change(function () {
-      self.emit("propertyChanged", elems, field, $check.is(":checked"));
+      self._triggerPropertyChanged(elems, field, $check.is(":checked"));
     });
   }
 
@@ -280,7 +290,7 @@ class PropertyEditorView extends EventEmitter {
     $edit.change(function () {
       var value = parseInt($edit.val());
       if (_.isNumber(value)) {
-        self.emit("propertyChanged", elems, field, value);
+        self._triggerPropertyChanged(elems, field, value);
       }
     });
   }
@@ -314,7 +324,7 @@ class PropertyEditorView extends EventEmitter {
     $edit.change(function () {
       var value = parseFloat($edit.val());
       if (_.isNumber(value)) {
-        self.emit("propertyChanged", elems, field, value);
+        self._triggerPropertyChanged(elems, field, value);
       }
     });
   }
@@ -356,7 +366,7 @@ class PropertyEditorView extends EventEmitter {
         "Do you want to delete this image?",
       );
       if (buttonId === "ok") {
-        self.emit("propertyChanged", elems, field, null);
+        self._triggerPropertyChanged(elems, field, null);
         elems.forEach((e) => {
           delete e.__img;
           delete e.__status;
@@ -384,7 +394,7 @@ class PropertyEditorView extends EventEmitter {
             height: image.height,
             data: image.data,
           };
-          self.emit("propertyChanged", elems, field, JSON.stringify(value));
+          self._triggerPropertyChanged(elems, field, JSON.stringify(value));
           _setImage(value);
         });
       }
@@ -418,7 +428,7 @@ class PropertyEditorView extends EventEmitter {
 
     let self = this;
     $select.change(function () {
-      self.emit("propertyChanged", elems, field, $select.val());
+      self._triggerPropertyChanged(elems, field, $select.val());
     });
   }
 
@@ -452,7 +462,7 @@ class PropertyEditorView extends EventEmitter {
 
     let self = this;
     $edit.change(function () {
-      self.emit("propertyChanged", elems, field, $edit.val());
+      self._triggerPropertyChanged(elems, field, $edit.val());
     });
 
     $select.val(strings.val);
@@ -522,7 +532,7 @@ class PropertyEditorView extends EventEmitter {
         .then(function ({ buttonId, returnValue }) {
           if (buttonId === "ok") {
             _setElement(returnValue);
-            self.emit("propertyChanged", elems, field, returnValue);
+            self._triggerPropertyChanged(elems, field, returnValue);
           }
         });
     });
@@ -588,7 +598,7 @@ class PropertyEditorView extends EventEmitter {
           var elem = self.repository.get(item._id);
           if (elem) {
             _autoCompleteSelected = elem;
-            self.emit("propertyChanged", elems, field, _autoCompleteSelected);
+            self._triggerPropertyChanged(elems, field, _autoCompleteSelected);
           }
         },
         change: function (e) {
@@ -606,7 +616,7 @@ class PropertyEditorView extends EventEmitter {
                 );
               }
             }
-            self.emit("propertyChanged", elems, field, ref || value);
+            self._triggerPropertyChanged(elems, field, ref || value);
             _autoCompleteSelected = null;
           }
         },
@@ -680,7 +690,7 @@ class PropertyEditorView extends EventEmitter {
         .then(function ({ buttonId, returnValue }) {
           if (buttonId === "ok") {
             $edit.val(returnValue ? returnValue.name : "");
-            self.emit("propertyChanged", elems, field, returnValue);
+            self._triggerPropertyChanged(elems, field, returnValue);
           }
         });
     });

@@ -1,75 +1,75 @@
 /*
-* Copyright (c) 2013-2014 Minkyu Lee. All rights reserved.
-*
-* NOTICE:  All information contained herein is, and remains the
-* property of Minkyu Lee. The intellectual and technical concepts
-* contained herein are proprietary to Minkyu Lee and may be covered
-* by Republic of Korea and Foreign Patents, patents in process,
-* and are protected by trade secret or copyright law.
-* Dissemination of this information or reproduction of this material
-* is strictly forbidden unless prior written permission is obtained
-* from Minkyu Lee (niklaus.lee@gmail.com).
-*
-*/
+ * Copyright (c) 2013-2014 Minkyu Lee. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the
+ * property of Minkyu Lee. The intellectual and technical concepts
+ * contained herein are proprietary to Minkyu Lee and may be covered
+ * by Republic of Korea and Foreign Patents, patents in process,
+ * and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Minkyu Lee (niklaus.lee@gmail.com).
+ *
+ */
 
-const fs = require('fs')
-const {EventEmitter} = require('events')
+const fs = require("fs");
+const { EventEmitter } = require("events");
+const { DOCUMENT_VERSION } = require("../core/core");
 
 /**
  * Project Manager
  */
 class ProjectManager extends EventEmitter {
-
-  constructor () {
-    super()
+  constructor() {
+    super();
 
     /**
      * A root (top-level) project element.
      * @private
      * @type {Project}
      */
-    this.project = null
+    this.project = null;
 
     /**
      * Project filename
      * @private
      * @type {string}
      */
-    this.filename = null
+    this.filename = null;
 
     /**
      * A reference to repository
      * @private
      * @type {Repository}
      */
-    this.repository = null
+    this.repository = null;
   }
 
   /**
    * Return project
    * @return {Project}
    */
-  getProject () {
-    return this.project
+  getProject() {
+    return this.project;
   }
 
   /**
    * Return current filename.
    * @return {string}
    */
-  getFilename () {
-    return this.filename
+  getFilename() {
+    return this.filename;
   }
 
   /**
    * New project
    * @return {Project}
    */
-  newProject () {
-    this.project = new type.Project()
-    this.filename = null
-    this.repository.clear()
-    this.repository.getIdMap()[this.project._id] = this.project
+  newProject() {
+    this.project = new type.Project();
+    this.filename = null;
+    this.repository.clear();
+    this.repository.getIdMap()[this.project._id] = this.project;
     try {
       /**
        * Triggered when a project is created
@@ -78,17 +78,17 @@ class ProjectManager extends EventEmitter {
        * @memberof ProjectManager
        * @property {Project} project The created project
        */
-      this.emit('projectCreated', this.project)
+      this.emit("projectCreated", this.project);
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
-    return this.project
+    return this.project;
   }
 
   /**
    * Close project
    */
-  closeProject () {
+  closeProject() {
     try {
       /**
        * Triggered before the project is closed
@@ -98,13 +98,13 @@ class ProjectManager extends EventEmitter {
        * @property {string} filename File name of the project
        * @property {Project} project The closing project
        */
-      this.emit('beforeProjectClose', this.filename, this.project)
+      this.emit("beforeProjectClose", this.filename, this.project);
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
-    this.project = null
-    this.filename = null
-    this.repository.clear()
+    this.project = null;
+    this.filename = null;
+    this.repository.clear();
     try {
       /**
        * Triggered after the project is closed
@@ -112,9 +112,9 @@ class ProjectManager extends EventEmitter {
        * @kind event
        * @memberof ProjectManager
        */
-      this.emit('projectClosed')
+      this.emit("projectClosed");
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
   }
 
@@ -123,11 +123,11 @@ class ProjectManager extends EventEmitter {
    * @param {string} fullPath
    * @return {Project} The saved project
    */
-  save (fullPath) {
-    var data = this.repository.writeObject(this.project)
-    fs.writeFileSync(fullPath, data, 'utf8')
-    this.filename = fullPath
-    this.repository.setModified(false)
+  save(fullPath) {
+    var data = this.repository.writeObject(this.project);
+    fs.writeFileSync(fullPath, data, "utf8");
+    this.filename = fullPath;
+    this.repository.setModified(false);
     try {
       /**
        * Triggered after the project is saved
@@ -137,11 +137,11 @@ class ProjectManager extends EventEmitter {
        * @property {string} filename File name of the project
        * @property {Project} project The saved project
        */
-      this.emit('projectSaved', this.filename, this.project)
+      this.emit("projectSaved", this.filename, this.project);
     } catch (ex) {
-      console.error(ex)
+      console.error(ex);
     }
-    return this.project
+    return this.project;
   }
 
   /**
@@ -149,13 +149,13 @@ class ProjectManager extends EventEmitter {
    * @param {string} fullPath
    * @return {Project} The loaded project. (null if failed to load)
    */
-  load (fullPath) {
-    const data = fs.readFileSync(fullPath, 'utf8')
+  load(fullPath) {
+    const data = fs.readFileSync(fullPath, "utf8");
     if (data) {
-      this.closeProject()
-      this.project = this.repository.readObject(data)
-      this.filename = fullPath
-      this.repository.setModified(false)
+      this.closeProject();
+      this.project = this.repository.readObject(data);
+      this.filename = fullPath;
+      this.repository.setModified(false);
       try {
         /**
          * Triggered after a project is loaded
@@ -165,13 +165,13 @@ class ProjectManager extends EventEmitter {
          * @property {string} filename File name of the project
          * @property {Project} project The loaded project
          */
-        this.emit('projectLoaded', this.filename, this.project)
+        this.emit("projectLoaded", this.filename, this.project);
       } catch (ex) {
-        console.error(ex)
+        console.error(ex);
       }
-      return this.project
+      return this.project;
     }
-    return null
+    return null;
   }
 
   /**
@@ -179,21 +179,21 @@ class ProjectManager extends EventEmitter {
    * @param {string} fullPath
    * @return {Project} The loaded project. (null if failed to load)
    */
-  loadAsTemplate (fullPath) {
-    const data = fs.readFileSync(fullPath, 'utf8')
+  loadAsTemplate(fullPath) {
+    const data = fs.readFileSync(fullPath, "utf8");
     if (data) {
-      this.closeProject()
-      this.project = this.repository.readObject(data)
-      this.filename = null
-      this.repository.setModified(false)
+      this.closeProject();
+      this.project = this.repository.readObject(data);
+      this.filename = null;
+      this.repository.setModified(false);
       try {
-        this.emit('projectLoaded', this.filename, this.project)
+        this.emit("projectLoaded", this.filename, this.project);
       } catch (ex) {
-        console.error(ex)
+        console.error(ex);
       }
-      return this.project
+      return this.project;
     }
-    return null
+    return null;
   }
 
   /**
@@ -201,19 +201,19 @@ class ProjectManager extends EventEmitter {
    * @param {Object} data JSON data.
    * @return {Project} The loaded project. (null if failed to load)
    */
-  loadFromJson (data) {
+  loadFromJson(data) {
     if (data) {
-      this.closeProject()
-      this.project = this.repository.readObject(data)
-      this.repository.setModified(false)
+      this.closeProject();
+      this.project = this.repository.readObject(data);
+      this.repository.setModified(false);
       try {
-        this.emit('projectLoaded', null, this.project)
+        this.emit("projectLoaded", null, this.project);
       } catch (err) {
-        console.error(err)
+        console.error(err);
       }
-      return this.project
+      return this.project;
     }
-    return null
+    return null;
   }
 
   /**
@@ -222,20 +222,20 @@ class ProjectManager extends EventEmitter {
    * @param {string} fullPath
    * @return {Element} The imported element (null if failed to import)
    */
-  importFromFile (parent, fullPath) {
-    const data = fs.readFileSync(fullPath, 'utf8')
+  importFromFile(parent, fullPath) {
+    const data = fs.readFileSync(fullPath, "utf8");
     if (data) {
-      var elem = null
+      var elem = null;
       if (data) {
-        elem = this.repository.readObject(data, true)
+        elem = this.repository.readObject(data, true);
         // Bypass Operation (for insert elem to parent)
-        let operationBuilder = this.repository.getOperationBuilder()
-        operationBuilder.begin('', true)
-        operationBuilder.fieldInsert(parent, 'ownedElements', elem)
-        operationBuilder.fieldAssign(elem, '_parent', parent)
-        operationBuilder.end()
-        this.repository.doOperation(operationBuilder.getOperation())
-        this.repository.setModified(true)
+        let operationBuilder = this.repository.getOperationBuilder();
+        operationBuilder.begin("", true);
+        operationBuilder.fieldInsert(parent, "ownedElements", elem);
+        operationBuilder.fieldAssign(elem, "_parent", parent);
+        operationBuilder.end();
+        this.repository.doOperation(operationBuilder.getOperation());
+        this.repository.setModified(true);
         try {
           /**
            * Triggered after a model fragment is imported
@@ -245,14 +245,14 @@ class ProjectManager extends EventEmitter {
            * @property {string} filename File name of the model fragment
            * @property {Element} elem The imported model fragment
            */
-          this.emit('imported', fullPath, elem)
+          this.emit("imported", fullPath, elem);
         } catch (ex) {
-          console.error(ex)
+          console.error(ex);
         }
       }
-      return elem
+      return elem;
     }
-    return null
+    return null;
   }
 
   /**
@@ -261,25 +261,25 @@ class ProjectManager extends EventEmitter {
    * @param {Object} data JSON data
    * @return {Element} The imported element (null if failed to import)
    */
-  importFromJson (parent, data) {
-    var elem = null
+  importFromJson(parent, data) {
+    var elem = null;
     if (data) {
-      elem = this.repository.readObject(data)
+      elem = this.repository.readObject(data);
       // Bypass Operation (for insert elem to parent)
-      let operationBuilder = this.repository.getOperationBuilder()
-      operationBuilder.begin('', true)
-      operationBuilder.fieldInsert(parent, 'ownedElements', elem)
-      operationBuilder.fieldAssign(elem, '_parent', parent)
-      operationBuilder.end()
-      this.repository.doOperation(operationBuilder.getOperation())
-      this.repository.setModified(true)
+      let operationBuilder = this.repository.getOperationBuilder();
+      operationBuilder.begin("", true);
+      operationBuilder.fieldInsert(parent, "ownedElements", elem);
+      operationBuilder.fieldAssign(elem, "_parent", parent);
+      operationBuilder.end();
+      this.repository.doOperation(operationBuilder.getOperation());
+      this.repository.setModified(true);
       try {
-        this.emit('imported', null, elem)
+        this.emit("imported", null, elem);
       } catch (err) {
-        console.error(err)
+        console.error(err);
       }
     }
-    return elem
+    return elem;
   }
 
   /**
@@ -288,9 +288,9 @@ class ProjectManager extends EventEmitter {
    * @param {string} fullPath
    * @return {Element} The exported element
    */
-  exportToFile (elem, fullPath) {
-    var data = this.repository.writeObject(elem)
-    fs.writeFileSync(fullPath, data)
+  exportToFile(elem, fullPath) {
+    var data = this.repository.writeObject(elem);
+    fs.writeFileSync(fullPath, data);
     try {
       /**
        * Triggered after a model fragment is exported
@@ -300,13 +300,12 @@ class ProjectManager extends EventEmitter {
        * @property {string} filename File name of the model fragment
        * @property {Element} elem The exported model fragment
        */
-      this.emit('exported', fullPath, elem)
+      this.emit("exported", fullPath, elem);
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
-    return elem
+    return elem;
   }
-
 }
 
-module.exports = ProjectManager
+module.exports = ProjectManager;

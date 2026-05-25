@@ -37,40 +37,12 @@ function showDialog() {
     Mustache.render(aboutDialogTemplate, context),
   );
   var $dlg = dialog.getElement();
-  var $licenseToLabel = $dlg.find(".licensed-to");
-  var $license = $dlg.find(".license");
-  var $licenseType = $dlg.find(".licenseType");
-  var $quantity = $dlg.find(".quantity");
   var $thirdparty = $dlg.find(".thirdparty");
 
   $thirdparty.click(function () {
     shell.openExternal(app.config.thirdparty_licenses_url);
   });
 
-  // set license info
-  if (app.licenseManager.getStatus() === true) {
-    if (app.config.setappBuild) {
-      $licenseToLabel.hide();
-    }
-    var info = app.licenseManager.getLicenseInfo();
-    var licenseTypeName = "Unknown";
-    switch (info.licenseType) {
-      case "STD":
-        licenseTypeName = "Standard Edition";
-        break;
-      case "PRO":
-        licenseTypeName = "Professional Edition";
-        break;
-      default:
-        break;
-    }
-    $license.html(info.name);
-    $licenseType.html(licenseTypeName);
-    $quantity.html(info.quantity + " User(s)");
-  } else {
-    $licenseToLabel.remove();
-    $license.html("(Evaluation mode)");
-  }
   return dialog;
 }
 

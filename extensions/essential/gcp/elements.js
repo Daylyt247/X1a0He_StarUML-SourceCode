@@ -134,7 +134,7 @@ class GCPDiagram extends Diagram {
       model instanceof Hyperlink ||
       model instanceof Diagram ||
       model instanceof type.GCPElement ||
-      model instanceof type.GCPRelationship
+      model instanceof type.GCPPath
     );
   }
 }
@@ -1014,7 +1014,7 @@ class GCPPathView extends GCPGeneralEdgeView {
   constructor() {
     super();
     this.lineStyle =
-      app.preferences.get("gcp.path.lineStyle", EdgeView.LS_RECTILINEAR) ??
+      app.preferences.get("gcp.path.lineStyle", EdgeView.LS_RECTILINEAR) ||
       app.preferences.get("view.lineStyle", EdgeView.LS_OBLIQUE);
     this.headEndStyle = EdgeView.ES_SOLID_ARROW;
   }

@@ -13,7 +13,7 @@
  */
 
 const URL = require("url");
-const { BrowserWindow, dialog, screen } = require("electron");
+const { BrowserWindow, ipcMain, dialog, screen } = require("electron");
 const { EventEmitter } = require("events");
 const Touchbar = require("./touchbar");
 const appConfig = require("electron-settings");
@@ -160,6 +160,19 @@ class Window extends EventEmitter {
    */
   sendCommand(command, ...args) {
     this.browserWindow.webContents.send("command", command, ...args);
+  }
+
+  async sendCommandAsync(command, ...args) {
+    return new Promise((resolve, reject) => {
+      ipcMain.once("command-trigger-response", (event, response, error) => {
+        if (error) {
+          reject(error);
+        } else {
+          resolve(response);
+        }
+      });
+      this.browserWindow.webContents.send("command-trigger", command, args);
+    });
   }
 
   /**

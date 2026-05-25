@@ -1,5 +1,7 @@
 const { app } = require("electron");
 const cli = require("./cli");
+const { startApiServer } = require("./api-server");
+const appConfig = require("electron-settings");
 
 // hide nodejs warnings
 process.env.NODE_NO_WARNINGS = 1;
@@ -26,6 +28,13 @@ function start() {
         global.application.openWindow({ fileToOpen: fileToOpen });
       } else {
         global.application.openWindow({ loadWorking: true });
+      }
+
+      // start api server
+      const apiServer = appConfig.getSync("apiServer");
+      const apiServerPort = appConfig.getSync("apiServerPort") || 58321;
+      if (apiServer !== false) {
+        startApiServer(apiServerPort);
       }
     } else {
       // app.exit(0)

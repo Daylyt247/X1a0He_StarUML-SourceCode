@@ -25,7 +25,7 @@ class TitlebarView {
     this.project = null;
     this.repository = null;
     this.metadata = null;
-    this.licenseManager = null;
+    this.licenseStore = null;
   }
 
   /**
@@ -46,8 +46,13 @@ class TitlebarView {
 
     title += this.metadata.name;
 
-    if (this.licenseManager.getStatus() === false) {
-      title += "(EVALUATION MODE)";
+    const licenseStatus = this.licenseStore.getLicenseStatus();
+    if (licenseStatus.trial) {
+      if (licenseStatus.trialDaysLeft > 0) {
+        title += " (TRIAL MODE)";
+      } else {
+        title += " (TRIAL EXPIRED - VIEWER MODE)";
+      }
     }
 
     $("title").html(title);

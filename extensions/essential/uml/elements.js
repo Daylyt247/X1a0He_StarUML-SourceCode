@@ -2720,7 +2720,7 @@ class UMLExtend extends UMLDirectedRelationship {
 /**
  * UMLUseCaseSubject
  */
-class UMLUseCaseSubject extends UMLModelElement {
+class UMLUseCaseSubject extends UMLSubsystem {
   constructor() {
     super();
 
@@ -8166,6 +8166,17 @@ class UMLNodeView extends UMLClassifierView {
       true,
     );
   }
+
+  canContainViewKind(kind) {
+    return (
+      app.metamodels.isKindOf(kind, "UMLClassifierView") ||
+      app.metamodels.isKindOf(kind, "UMLPackageView") ||
+      app.metamodels.isKindOf(kind, "UMLObjectView") ||
+      app.metamodels.isKindOf(kind, "UMLArtifactInstanceView") ||
+      app.metamodels.isKindOf(kind, "UMLComponentInstanceView") ||
+      app.metamodels.isKindOf(kind, "UMLNodeInstanceView")
+    );
+  }
 }
 
 /**
@@ -8746,8 +8757,19 @@ class UMLExtendView extends UMLGeneralEdgeView {
 class UMLUseCaseSubjectView extends UMLGeneralNodeView {
   constructor() {
     super();
-    this.zIndex = -1;
-    this.selectZIndex = -1;
+    this.zIndex = 0;
+    this.selectZIndex = 0;
+  }
+
+  canContainViewKind(kind) {
+    return (
+      app.metamodels.isKindOf(kind, "UMLClassifierView") ||
+      app.metamodels.isKindOf(kind, "UMLPackageView") ||
+      app.metamodels.isKindOf(kind, "UMLObjectView") ||
+      app.metamodels.isKindOf(kind, "UMLArtifactInstanceView") ||
+      app.metamodels.isKindOf(kind, "UMLComponentInstanceView") ||
+      app.metamodels.isKindOf(kind, "UMLNodeInstanceView")
+    );
   }
 
   update(canvas) {

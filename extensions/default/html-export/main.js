@@ -26,7 +26,6 @@ const fsj = require("fs-jetpack");
 const crypto = require("crypto");
 const path = require("path");
 const escapeHtml = require("escape-html");
-const markdown_ = require("markdown").markdown;
 const render = require("./render");
 
 const DOC_FOLDER = "/html-docs";
@@ -125,7 +124,7 @@ var filters = {
   },
   // Render markdown syntax
   markdown: function (text) {
-    return markdown_.toHTML(text);
+    return "<div class='prose'>" + window.marked.parse(text) + "</div>";
   },
 };
 

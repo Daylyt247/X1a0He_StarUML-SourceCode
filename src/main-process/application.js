@@ -26,6 +26,14 @@ const ipcMain = electron.ipcMain;
 const MetadataManager = require("./metadata-manager");
 const ExtensionLoader = require("../extensibility/extension-loader");
 const packageJSON = require("../../package.json");
+const {
+  getDeviceId,
+  remoteActivate,
+  remoteDeactivate,
+  remoteValidate,
+  getLicenseStatus: getLicenseStatus2,
+  localValidate,
+} = require("../utils/license-client");
 
 autoUpdater.setFeedURL("https://update.staruml.io/releases-v6");
 
@@ -403,6 +411,7 @@ class Application extends EventEmitter {
     });
 
     // Propagated events triggered in a window process
+
     ipcMain.on("window-event-propagate", (event, eventName, ...args) => {
       const window = BrowserWindow.fromWebContents(event.sender);
       window.emit(eventName, ...args);
@@ -416,7 +425,7 @@ class Application extends EventEmitter {
       }
     });
 
-    // handle invoke calls
+    // handle dialogs invoke calls
 
     ipcMain.handle("show-open-dialog-async", async (event, options) => {
       const win = BrowserWindow.fromWebContents(event.sender);
@@ -428,6 +437,35 @@ class Application extends EventEmitter {
       const win = BrowserWindow.fromWebContents(event.sender);
       const resultValue = await electron.dialog.showSaveDialog(win, options);
       return resultValue.canceled ? null : resultValue.filePath;
+    });
+
+    // handle license invoke calls
+
+    ipcMain.handle("license.get-device-id", async (event) => {
+      const deviceId = await getDeviceId();
+      return deviceId;
+    });
+
+    ipcMain.handle("license.activate", async (event, licenseKey) => {
+      const result = await remoteActivate(licenseKey);
+      return result;
+    });
+
+    ipcMain.handle("license.deactivate", async (event) => {
+      const result = await remoteDeactivate();
+      return result;
+    });
+
+    ipcMain.handle("license.validate", async (event) => {
+      let result = await localValidate();
+      if (result.success) {
+        result = await remoteValidate();
+      }
+      return result;
+    });
+
+    ipcMain.handle("license.get-license-status", async (event) => {
+      return getLicenseStatus2();
     });
   }
 

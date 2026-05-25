@@ -43,9 +43,7 @@ function handleSetIcon(options) {
             view.model.__assetBaseDir,
             returnValue,
           );
-          console.log("basePath", basePath);
           imageToDataURL(basePath, (result) => {
-            console.log("result", result);
             view.__icon.state = 0;
             view.__icon.img.src = result.data;
           });

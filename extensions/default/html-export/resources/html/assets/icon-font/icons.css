@@ -4,10 +4,10 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("icons.eot?a1f2bbb147349aa22c3b7297009869a7");
-	src:url("icons.eot?a1f2bbb147349aa22c3b7297009869a7#iefix") format("embedded-opentype"),
-		url("icons.woff?a1f2bbb147349aa22c3b7297009869a7") format("woff"),
-		url("icons.ttf?a1f2bbb147349aa22c3b7297009869a7") format("truetype");
+	src:url("icons.eot?4e9eb228d42455658e5c5d119e628bf2");
+	src:url("icons.eot?4e9eb228d42455658e5c5d119e628bf2#iefix") format("embedded-opentype"),
+		url("icons.woff?4e9eb228d42455658e5c5d119e628bf2") format("woff"),
+		url("icons.ttf?4e9eb228d42455658e5c5d119e628bf2") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -87,2976 +87,3031 @@
 }
 
 
-.icon-BPMNAdHocSubProcess:before {
+.icon-AzureCallout:before {
 	content:"\f10c";
 }
 
 
-.icon-BPMNAssociation:before {
+.icon-AzureConnector:before {
 	content:"\f10d";
 }
 
 
-.icon-BPMNBoundaryEvent:before {
+.icon-AzureDiagram:before {
 	content:"\f10e";
 }
 
 
-.icon-BPMNBusinessRuleTask:before {
+.icon-AzureGroup:before {
 	content:"\f10f";
 }
 
 
-.icon-BPMNCallActivity:before {
+.icon-AzureModel:before {
 	content:"\f110";
 }
 
 
-.icon-BPMNCallConversation:before {
+.icon-AzureService:before {
 	content:"\f111";
 }
 
 
-.icon-BPMNCancelEventDefinition:before {
+.icon-BPMNAdHocSubProcess:before {
 	content:"\f112";
 }
 
 
-.icon-BPMNChoreography:before {
+.icon-BPMNAssociation:before {
 	content:"\f113";
 }
 
 
-.icon-BPMNChoreographyTask:before {
+.icon-BPMNBoundaryEvent:before {
 	content:"\f114";
 }
 
 
-.icon-BPMNCollaboration:before {
+.icon-BPMNBusinessRuleTask:before {
 	content:"\f115";
 }
 
 
-.icon-BPMNCompensateEventDefinition:before {
+.icon-BPMNCallActivity:before {
 	content:"\f116";
 }
 
 
-.icon-BPMNComplexGateway:before {
+.icon-BPMNCallConversation:before {
 	content:"\f117";
 }
 
 
-.icon-BPMNConditionalEventDefinition:before {
+.icon-BPMNCancelEventDefinition:before {
 	content:"\f118";
 }
 
 
-.icon-BPMNConversation:before {
+.icon-BPMNChoreography:before {
 	content:"\f119";
 }
 
 
-.icon-BPMNConversationLink:before {
+.icon-BPMNChoreographyTask:before {
 	content:"\f11a";
 }
 
 
-.icon-BPMNDataAssociation:before {
+.icon-BPMNCollaboration:before {
 	content:"\f11b";
 }
 
 
-.icon-BPMNDataInput:before {
+.icon-BPMNCompensateEventDefinition:before {
 	content:"\f11c";
 }
 
 
-.icon-BPMNDataObject:before {
+.icon-BPMNComplexGateway:before {
 	content:"\f11d";
 }
 
 
-.icon-BPMNDataOutput:before {
+.icon-BPMNConditionalEventDefinition:before {
 	content:"\f11e";
 }
 
 
-.icon-BPMNDataStore:before {
+.icon-BPMNConversation:before {
 	content:"\f11f";
 }
 
 
-.icon-BPMNDiagram:before {
+.icon-BPMNConversationLink:before {
 	content:"\f120";
 }
 
 
-.icon-BPMNEndEvent:before {
+.icon-BPMNDataAssociation:before {
 	content:"\f121";
 }
 
 
-.icon-BPMNErrorEventDefinition:before {
+.icon-BPMNDataInput:before {
 	content:"\f122";
 }
 
 
-.icon-BPMNEscalationEventDefinition:before {
+.icon-BPMNDataObject:before {
 	content:"\f123";
 }
 
 
-.icon-BPMNEvent:before {
+.icon-BPMNDataOutput:before {
 	content:"\f124";
 }
 
 
-.icon-BPMNEventBasedGateway:before {
+.icon-BPMNDataStore:before {
 	content:"\f125";
 }
 
 
-.icon-BPMNExclusiveGateway:before {
+.icon-BPMNDiagram:before {
 	content:"\f126";
 }
 
 
-.icon-BPMNGateway:before {
+.icon-BPMNEndEvent:before {
 	content:"\f127";
 }
 
 
-.icon-BPMNGlobalConversation:before {
+.icon-BPMNErrorEventDefinition:before {
 	content:"\f128";
 }
 
 
-.icon-BPMNGroup:before {
+.icon-BPMNEscalationEventDefinition:before {
 	content:"\f129";
 }
 
 
-.icon-BPMNInclusiveGateway:before {
+.icon-BPMNEvent:before {
 	content:"\f12a";
 }
 
 
-.icon-BPMNIntermediateCatchEvent:before {
+.icon-BPMNEventBasedGateway:before {
 	content:"\f12b";
 }
 
 
-.icon-BPMNIntermediateEvent:before {
+.icon-BPMNExclusiveGateway:before {
 	content:"\f12c";
 }
 
 
-.icon-BPMNIntermediateThrowEvent:before {
+.icon-BPMNGateway:before {
 	content:"\f12d";
 }
 
 
-.icon-BPMNLane:before {
+.icon-BPMNGlobalConversation:before {
 	content:"\f12e";
 }
 
 
-.icon-BPMNLaneVert:before {
+.icon-BPMNGroup:before {
 	content:"\f12f";
 }
 
 
-.icon-BPMNLinkEventDefinition:before {
+.icon-BPMNInclusiveGateway:before {
 	content:"\f130";
 }
 
 
-.icon-BPMNManualTask:before {
+.icon-BPMNIntermediateCatchEvent:before {
 	content:"\f131";
 }
 
 
-.icon-BPMNMessage:before {
+.icon-BPMNIntermediateEvent:before {
 	content:"\f132";
 }
 
 
-.icon-BPMNMessageEventDefinition:before {
+.icon-BPMNIntermediateThrowEvent:before {
 	content:"\f133";
 }
 
 
-.icon-BPMNMessageFlow:before {
+.icon-BPMNLane:before {
 	content:"\f134";
 }
 
 
-.icon-BPMNMessageLink:before {
+.icon-BPMNLaneVert:before {
 	content:"\f135";
 }
 
 
-.icon-BPMNParallelGateway:before {
+.icon-BPMNLinkEventDefinition:before {
 	content:"\f136";
 }
 
 
-.icon-BPMNParticipant:before {
+.icon-BPMNManualTask:before {
 	content:"\f137";
 }
 
 
-.icon-BPMNParticipantVert:before {
+.icon-BPMNMessage:before {
 	content:"\f138";
 }
 
 
-.icon-BPMNProcess:before {
+.icon-BPMNMessageEventDefinition:before {
 	content:"\f139";
 }
 
 
-.icon-BPMNReceiveTask:before {
+.icon-BPMNMessageFlow:before {
 	content:"\f13a";
 }
 
 
-.icon-BPMNScriptTask:before {
+.icon-BPMNMessageLink:before {
 	content:"\f13b";
 }
 
 
-.icon-BPMNSendTask:before {
+.icon-BPMNParallelGateway:before {
 	content:"\f13c";
 }
 
 
-.icon-BPMNSequenceFlow:before {
+.icon-BPMNParticipant:before {
 	content:"\f13d";
 }
 
 
-.icon-BPMNServiceTask:before {
+.icon-BPMNParticipantVert:before {
 	content:"\f13e";
 }
 
 
-.icon-BPMNSignalEventDefinition:before {
+.icon-BPMNProcess:before {
 	content:"\f13f";
 }
 
 
-.icon-BPMNStartEvent:before {
+.icon-BPMNReceiveTask:before {
 	content:"\f140";
 }
 
 
-.icon-BPMNSubChoreography:before {
+.icon-BPMNScriptTask:before {
 	content:"\f141";
 }
 
 
-.icon-BPMNSubConversation:before {
+.icon-BPMNSendTask:before {
 	content:"\f142";
 }
 
 
-.icon-BPMNSubProcess:before {
+.icon-BPMNSequenceFlow:before {
 	content:"\f143";
 }
 
 
-.icon-BPMNTask:before {
+.icon-BPMNServiceTask:before {
 	content:"\f144";
 }
 
 
-.icon-BPMNTerminateEventDefinition:before {
+.icon-BPMNSignalEventDefinition:before {
 	content:"\f145";
 }
 
 
-.icon-BPMNTextAnnotation:before {
+.icon-BPMNStartEvent:before {
 	content:"\f146";
 }
 
 
-.icon-BPMNTimerEventDefinition:before {
+.icon-BPMNSubChoreography:before {
 	content:"\f147";
 }
 
 
-.icon-BPMNTransaction:before {
+.icon-BPMNSubConversation:before {
 	content:"\f148";
 }
 
 
-.icon-BPMNUserTask:before {
+.icon-BPMNSubProcess:before {
 	content:"\f149";
 }
 
 
-.icon-C4Component:before {
+.icon-BPMNTask:before {
 	content:"\f14a";
 }
 
 
-.icon-C4Container:before {
+.icon-BPMNTerminateEventDefinition:before {
 	content:"\f14b";
 }
 
 
-.icon-C4Diagram:before {
+.icon-BPMNTextAnnotation:before {
 	content:"\f14c";
 }
 
 
-.icon-C4Element:before {
+.icon-BPMNTimerEventDefinition:before {
 	content:"\f14d";
 }
 
 
-.icon-C4Model:before {
+.icon-BPMNTransaction:before {
 	content:"\f14e";
 }
 
 
-.icon-C4Person:before {
+.icon-BPMNUserTask:before {
 	content:"\f14f";
 }
 
 
-.icon-C4Relationship:before {
+.icon-C4Component:before {
 	content:"\f150";
 }
 
 
-.icon-C4SoftwareSystem:before {
+.icon-C4Container:before {
 	content:"\f151";
 }
 
 
-.icon-DFDDataFlow:before {
+.icon-C4Diagram:before {
 	content:"\f152";
 }
 
 
-.icon-DFDDataFlowModel:before {
+.icon-C4Element:before {
 	content:"\f153";
 }
 
 
-.icon-DFDDataStore:before {
+.icon-C4Model:before {
 	content:"\f154";
 }
 
 
-.icon-DFDDiagram:before {
+.icon-C4Person:before {
 	content:"\f155";
 }
 
 
-.icon-DFDExternalEntity:before {
+.icon-C4Relationship:before {
 	content:"\f156";
 }
 
 
-.icon-DFDProcess:before {
+.icon-C4SoftwareSystem:before {
 	content:"\f157";
 }
 
 
-.icon-Ellipse:before {
+.icon-DFDDataFlow:before {
 	content:"\f158";
 }
 
 
-.icon-ERDColumn:before {
+.icon-DFDDataFlowModel:before {
 	content:"\f159";
 }
 
 
-.icon-ERDDataModel:before {
+.icon-DFDDataStore:before {
 	content:"\f15a";
 }
 
 
-.icon-ERDDiagram:before {
+.icon-DFDDiagram:before {
 	content:"\f15b";
 }
 
 
-.icon-ERDEntity:before {
+.icon-DFDExternalEntity:before {
 	content:"\f15c";
 }
 
 
-.icon-ERDManyToMany:before {
+.icon-DFDProcess:before {
 	content:"\f15d";
 }
 
 
-.icon-ERDOneToMany:before {
+.icon-Ellipse:before {
 	content:"\f15e";
 }
 
 
-.icon-ERDOneToOne:before {
+.icon-ERDColumn:before {
 	content:"\f15f";
 }
 
 
-.icon-ERDRelationship:before {
+.icon-ERDDataModel:before {
 	content:"\f160";
 }
 
 
-.icon-ERDRelationshipEnd:before {
+.icon-ERDDiagram:before {
 	content:"\f161";
 }
 
 
-.icon-FCAlternateProcess:before {
+.icon-ERDEntity:before {
 	content:"\f162";
 }
 
 
-.icon-FCCard:before {
+.icon-ERDManyToMany:before {
 	content:"\f163";
 }
 
 
-.icon-FCCollate:before {
+.icon-ERDOneToMany:before {
 	content:"\f164";
 }
 
 
-.icon-FCConnector:before {
+.icon-ERDOneToOne:before {
 	content:"\f165";
 }
 
 
-.icon-FCData:before {
+.icon-ERDRelationship:before {
 	content:"\f166";
 }
 
 
-.icon-FCDatabase:before {
+.icon-ERDRelationshipEnd:before {
 	content:"\f167";
 }
 
 
-.icon-FCDecision:before {
+.icon-FCAlternateProcess:before {
 	content:"\f168";
 }
 
 
-.icon-FCDelay:before {
+.icon-FCCard:before {
 	content:"\f169";
 }
 
 
-.icon-FCDirectAccessStorage:before {
+.icon-FCCollate:before {
 	content:"\f16a";
 }
 
 
-.icon-FCDisplay:before {
+.icon-FCConnector:before {
 	content:"\f16b";
 }
 
 
-.icon-FCDocument:before {
+.icon-FCData:before {
 	content:"\f16c";
 }
 
 
-.icon-FCExtract:before {
+.icon-FCDatabase:before {
 	content:"\f16d";
 }
 
 
-.icon-FCFlow:before {
+.icon-FCDecision:before {
 	content:"\f16e";
 }
 
 
-.icon-FCFlowchart:before {
+.icon-FCDelay:before {
 	content:"\f16f";
 }
 
 
-.icon-FCFlowchartDiagram:before {
+.icon-FCDirectAccessStorage:before {
 	content:"\f170";
 }
 
 
-.icon-FCInternalStorage:before {
+.icon-FCDisplay:before {
 	content:"\f171";
 }
 
 
-.icon-FCManualInput:before {
+.icon-FCDocument:before {
 	content:"\f172";
 }
 
 
-.icon-FCManualOperation:before {
+.icon-FCExtract:before {
 	content:"\f173";
 }
 
 
-.icon-FCMerge:before {
+.icon-FCFlow:before {
 	content:"\f174";
 }
 
 
-.icon-FCMultiDocument:before {
+.icon-FCFlowchart:before {
 	content:"\f175";
 }
 
 
-.icon-FCOffPageConnector:before {
+.icon-FCFlowchartDiagram:before {
 	content:"\f176";
 }
 
 
-.icon-FCOr:before {
+.icon-FCInternalStorage:before {
 	content:"\f177";
 }
 
 
-.icon-FCPredefinedProcess:before {
+.icon-FCManualInput:before {
 	content:"\f178";
 }
 
 
-.icon-FCPreparation:before {
+.icon-FCManualOperation:before {
 	content:"\f179";
 }
 
 
-.icon-FCProcess:before {
+.icon-FCMerge:before {
 	content:"\f17a";
 }
 
 
-.icon-FCPunchedTape:before {
+.icon-FCMultiDocument:before {
 	content:"\f17b";
 }
 
 
-.icon-FCSort:before {
+.icon-FCOffPageConnector:before {
 	content:"\f17c";
 }
 
 
-.icon-FCStoredData:before {
+.icon-FCOr:before {
 	content:"\f17d";
 }
 
 
-.icon-FCSummingJunction:before {
+.icon-FCPredefinedProcess:before {
 	content:"\f17e";
 }
 
 
-.icon-FCTerminator:before {
+.icon-FCPreparation:before {
 	content:"\f17f";
 }
 
 
-.icon-FreeLine:before {
+.icon-FCProcess:before {
 	content:"\f180";
 }
 
 
-.icon-GCPDiagram:before {
+.icon-FCPunchedTape:before {
 	content:"\f181";
 }
 
 
-.icon-GCPModel:before {
+.icon-FCSort:before {
 	content:"\f182";
 }
 
 
-.icon-GCPPath:before {
+.icon-FCStoredData:before {
 	content:"\f183";
 }
 
 
-.icon-GCPProduct:before {
+.icon-FCSummingJunction:before {
 	content:"\f184";
 }
 
 
-.icon-GCPService:before {
+.icon-FCTerminator:before {
 	content:"\f185";
 }
 
 
-.icon-GCPUser:before {
+.icon-FreeLine:before {
 	content:"\f186";
 }
 
 
-.icon-GCPZone:before {
+.icon-GCPDiagram:before {
 	content:"\f187";
 }
 
 
-.icon-Hyperlink:before {
+.icon-GCPModel:before {
 	content:"\f188";
 }
 
 
-.icon-Image:before {
+.icon-GCPPath:before {
 	content:"\f189";
 }
 
 
-.icon-MMEdge:before {
+.icon-GCPProduct:before {
 	content:"\f18a";
 }
 
 
-.icon-MMMindmap:before {
+.icon-GCPService:before {
 	content:"\f18b";
 }
 
 
-.icon-MMMindmapDiagram:before {
+.icon-GCPUser:before {
 	content:"\f18c";
 }
 
 
-.icon-MMNode:before {
+.icon-GCPZone:before {
 	content:"\f18d";
 }
 
 
-.icon-Project:before {
+.icon-Hyperlink:before {
 	content:"\f18e";
 }
 
 
-.icon-Rectangle:before {
+.icon-Image:before {
 	content:"\f18f";
 }
 
 
-.icon-RoundedRectangle:before {
+.icon-MMEdge:before {
 	content:"\f190";
 }
 
 
-.icon-SysMLBlock:before {
+.icon-MMMindmap:before {
 	content:"\f191";
 }
 
 
-.icon-SysMLBlockDefinitionDiagram:before {
+.icon-MMMindmapDiagram:before {
 	content:"\f192";
 }
 
 
-.icon-SysMLConnector:before {
+.icon-MMNode:before {
 	content:"\f193";
 }
 
 
-.icon-SysMLConstraintBlock:before {
+.icon-Project:before {
 	content:"\f194";
 }
 
 
-.icon-SysMLConstraintParameter:before {
+.icon-Rectangle:before {
 	content:"\f195";
 }
 
 
-.icon-SysMLConstraintProperty:before {
+.icon-RoundedRectangle:before {
 	content:"\f196";
 }
 
 
-.icon-SysMLFlowProperty:before {
+.icon-SysMLBlock:before {
 	content:"\f197";
 }
 
 
-.icon-SysMLInterfaceBlock:before {
+.icon-SysMLBlockDefinitionDiagram:before {
 	content:"\f198";
 }
 
 
-.icon-SysMLInternalBlockDiagram:before {
+.icon-SysMLConnector:before {
 	content:"\f199";
 }
 
 
-.icon-SysMLItemFlow:before {
+.icon-SysMLConstraintBlock:before {
 	content:"\f19a";
 }
 
 
-.icon-SysMLParametricDiagram:before {
+.icon-SysMLConstraintParameter:before {
 	content:"\f19b";
 }
 
 
-.icon-SysMLPart:before {
+.icon-SysMLConstraintProperty:before {
 	content:"\f19c";
 }
 
 
-.icon-SysMLPort:before {
+.icon-SysMLFlowProperty:before {
 	content:"\f19d";
 }
 
 
-.icon-SysMLProperty:before {
+.icon-SysMLInterfaceBlock:before {
 	content:"\f19e";
 }
 
 
-.icon-SysMLReference:before {
+.icon-SysMLInternalBlockDiagram:before {
 	content:"\f19f";
 }
 
 
-.icon-SysMLRequirement:before {
+.icon-SysMLItemFlow:before {
 	content:"\f1a0";
 }
 
 
-.icon-SysMLRequirementDiagram:before {
+.icon-SysMLParametricDiagram:before {
 	content:"\f1a1";
 }
 
 
-.icon-SysMLValue:before {
+.icon-SysMLPart:before {
 	content:"\f1a2";
 }
 
 
-.icon-SysMLValueType:before {
+.icon-SysMLPort:before {
 	content:"\f1a3";
 }
 
 
-.icon-Tag:before {
+.icon-SysMLProperty:before {
 	content:"\f1a4";
 }
 
 
-.icon-tool-add-sub-requirement:before {
+.icon-SysMLReference:before {
 	content:"\f1a5";
 }
 
 
-.icon-tool-add:before {
+.icon-SysMLRequirement:before {
 	content:"\f1a6";
 }
 
 
-.icon-tool-aggregation:before {
+.icon-SysMLRequirementDiagram:before {
 	content:"\f1a7";
 }
 
 
-.icon-tool-align-bottom:before {
+.icon-SysMLValue:before {
 	content:"\f1a8";
 }
 
 
-.icon-tool-align-center:before {
+.icon-SysMLValueType:before {
 	content:"\f1a9";
 }
 
 
-.icon-tool-align-left:before {
+.icon-Tag:before {
 	content:"\f1aa";
 }
 
 
-.icon-tool-align-middle:before {
+.icon-tool-add-sub-requirement:before {
 	content:"\f1ab";
 }
 
 
-.icon-tool-align-right:before {
+.icon-tool-add:before {
 	content:"\f1ac";
 }
 
 
-.icon-tool-align-space-even-horz:before {
+.icon-tool-aggregation:before {
 	content:"\f1ad";
 }
 
 
-.icon-tool-align-space-even-vert:before {
+.icon-tool-align-bottom:before {
 	content:"\f1ae";
 }
 
 
-.icon-tool-align-top:before {
+.icon-tool-align-center:before {
 	content:"\f1af";
 }
 
 
-.icon-tool-associate:before {
+.icon-tool-align-left:before {
 	content:"\f1b0";
 }
 
 
-.icon-tool-associated-actor:before {
+.icon-tool-align-middle:before {
 	content:"\f1b1";
 }
 
 
-.icon-tool-associated-usecase:before {
+.icon-tool-align-right:before {
 	content:"\f1b2";
 }
 
 
-.icon-tool-association:before {
+.icon-tool-align-space-even-horz:before {
 	content:"\f1b3";
 }
 
 
-.icon-tool-asynch-call:before {
+.icon-tool-align-space-even-vert:before {
 	content:"\f1b4";
 }
 
 
-.icon-tool-asynch-signal:before {
+.icon-tool-align-top:before {
 	content:"\f1b5";
 }
 
 
-.icon-tool-attribute:before {
+.icon-tool-associate:before {
 	content:"\f1b6";
 }
 
 
-.icon-tool-auto-resize:before {
+.icon-tool-associated-actor:before {
 	content:"\f1b7";
 }
 
 
-.icon-tool-aws-icon:before {
+.icon-tool-associated-usecase:before {
 	content:"\f1b8";
 }
 
 
-.icon-tool-bpmn-add-annotation:before {
+.icon-tool-association:before {
 	content:"\f1b9";
 }
 
 
-.icon-tool-bpmn-choreography-add-initiating-message:before {
+.icon-tool-asynch-call:before {
 	content:"\f1ba";
 }
 
 
-.icon-tool-bpmn-choreography-add-participant-lower:before {
+.icon-tool-asynch-signal:before {
 	content:"\f1bb";
 }
 
 
-.icon-tool-bpmn-choreography-add-participant-upper:before {
+.icon-tool-attribute:before {
 	content:"\f1bc";
 }
 
 
-.icon-tool-bpmn-choreography-add-return-message:before {
+.icon-tool-auto-resize:before {
 	content:"\f1bd";
 }
 
 
-.icon-tool-bpmn-choreography-create-participant-lower:before {
+.icon-tool-aws-icon:before {
 	content:"\f1be";
 }
 
 
-.icon-tool-bpmn-choreography-create-participant-upper:before {
+.icon-tool-azure-dashed:before {
 	content:"\f1bf";
 }
 
 
-.icon-tool-bpmn-choreography-initiating-participant:before {
+.icon-tool-azure-icon:before {
 	content:"\f1c0";
 }
 
 
-.icon-tool-BPMNBoundaryEvent:before {
+.icon-tool-azure-rect:before {
 	content:"\f1c1";
 }
 
 
-.icon-tool-BPMNCancelEventDefinition:before {
+.icon-tool-azure-rounded:before {
 	content:"\f1c2";
 }
 
 
-.icon-tool-BPMNCompensateEventDefinition:before {
+.icon-tool-azure-solid:before {
 	content:"\f1c3";
 }
 
 
-.icon-tool-BPMNConditionalEventDefinition:before {
+.icon-tool-bpmn-add-annotation:before {
 	content:"\f1c4";
 }
 
 
-.icon-tool-BPMNErrorEventDefinition:before {
+.icon-tool-bpmn-choreography-add-initiating-message:before {
 	content:"\f1c5";
 }
 
 
-.icon-tool-BPMNEscalationEventDefinition:before {
+.icon-tool-bpmn-choreography-add-participant-lower:before {
 	content:"\f1c6";
 }
 
 
-.icon-tool-BPMNLane:before {
+.icon-tool-bpmn-choreography-add-participant-upper:before {
 	content:"\f1c7";
 }
 
 
-.icon-tool-BPMNLinkEventDefinition:before {
+.icon-tool-bpmn-choreography-add-return-message:before {
 	content:"\f1c8";
 }
 
 
-.icon-tool-BPMNMessageEventDefinition:before {
+.icon-tool-bpmn-choreography-create-participant-lower:before {
 	content:"\f1c9";
 }
 
 
-.icon-tool-BPMNSignalEventDefinition:before {
+.icon-tool-bpmn-choreography-create-participant-upper:before {
 	content:"\f1ca";
 }
 
 
-.icon-tool-BPMNTerminateEventDefinition:before {
+.icon-tool-bpmn-choreography-initiating-participant:before {
 	content:"\f1cb";
 }
 
 
-.icon-tool-BPMNTimerEventDefinition:before {
+.icon-tool-BPMNBoundaryEvent:before {
 	content:"\f1cc";
 }
 
 
-.icon-tool-bring-to-front:before {
+.icon-tool-BPMNCancelEventDefinition:before {
 	content:"\f1cd";
 }
 
 
-.icon-tool-choice:before {
+.icon-tool-BPMNCompensateEventDefinition:before {
 	content:"\f1ce";
 }
 
 
-.icon-tool-communicating-node:before {
+.icon-tool-BPMNConditionalEventDefinition:before {
 	content:"\f1cf";
 }
 
 
-.icon-tool-composite:before {
+.icon-tool-BPMNErrorEventDefinition:before {
 	content:"\f1d0";
 }
 
 
-.icon-tool-composition:before {
+.icon-tool-BPMNEscalationEventDefinition:before {
 	content:"\f1d1";
 }
 
 
-.icon-tool-connected-lifeline:before {
+.icon-tool-BPMNLane:before {
 	content:"\f1d2";
 }
 
 
-.icon-tool-connected-part:before {
+.icon-tool-BPMNLinkEventDefinition:before {
 	content:"\f1d3";
 }
 
 
-.icon-tool-connection-point-reference:before {
+.icon-tool-BPMNMessageEventDefinition:before {
 	content:"\f1d4";
 }
 
 
-.icon-tool-constraint-parameter:before {
+.icon-tool-BPMNSignalEventDefinition:before {
 	content:"\f1d5";
 }
 
 
-.icon-tool-constraint-property:before {
+.icon-tool-BPMNTerminateEventDefinition:before {
 	content:"\f1d6";
 }
 
 
-.icon-tool-constraint:before {
+.icon-tool-BPMNTimerEventDefinition:before {
 	content:"\f1d7";
 }
 
 
-.icon-tool-create-block:before {
+.icon-tool-bring-to-front:before {
 	content:"\f1d8";
 }
 
 
-.icon-tool-create-constraint-block:before {
+.icon-tool-choice:before {
 	content:"\f1d9";
 }
 
 
-.icon-tool-create-item-flow:before {
+.icon-tool-communicating-node:before {
 	content:"\f1da";
 }
 
 
-.icon-tool-create-message-lifeline:before {
+.icon-tool-composite:before {
 	content:"\f1db";
 }
 
 
-.icon-tool-create-message:before {
+.icon-tool-composition:before {
 	content:"\f1dc";
 }
 
 
-.icon-tool-create-operation:before {
+.icon-tool-connected-lifeline:before {
 	content:"\f1dd";
 }
 
 
-.icon-tool-create-signal:before {
+.icon-tool-connected-part:before {
 	content:"\f1de";
 }
 
 
-.icon-tool-create-state-condition:before {
+.icon-tool-connection-point-reference:before {
 	content:"\f1df";
 }
 
 
-.icon-tool-create-type:before {
+.icon-tool-constraint-parameter:before {
 	content:"\f1e0";
 }
 
 
-.icon-tool-create-value-type:before {
+.icon-tool-constraint-property:before {
 	content:"\f1e1";
 }
 
 
-.icon-tool-curve:before {
+.icon-tool-constraint:before {
 	content:"\f1e2";
 }
 
 
-.icon-tool-decision:before {
+.icon-tool-create-block:before {
 	content:"\f1e3";
 }
 
 
-.icon-tool-delete-item-flow:before {
+.icon-tool-create-constraint-block:before {
 	content:"\f1e4";
 }
 
 
-.icon-tool-delete-message:before {
+.icon-tool-create-item-flow:before {
 	content:"\f1e5";
 }
 
 
-.icon-tool-delete:before {
+.icon-tool-create-message-lifeline:before {
 	content:"\f1e6";
 }
 
 
-.icon-tool-dependant-package:before {
+.icon-tool-create-message:before {
 	content:"\f1e7";
 }
 
 
-.icon-tool-depending-package:before {
+.icon-tool-create-operation:before {
 	content:"\f1e8";
 }
 
 
-.icon-tool-deployed-artifact:before {
+.icon-tool-create-signal:before {
 	content:"\f1e9";
 }
 
 
-.icon-tool-deployed-component:before {
+.icon-tool-create-state-condition:before {
 	content:"\f1ea";
 }
 
 
-.icon-tool-do-activity:before {
+.icon-tool-create-type:before {
 	content:"\f1eb";
 }
 
 
-.icon-tool-edit:before {
+.icon-tool-create-value-type:before {
 	content:"\f1ec";
 }
 
 
-.icon-tool-effect:before {
+.icon-tool-curve:before {
 	content:"\f1ed";
 }
 
 
-.icon-tool-end-order-backward:before {
+.icon-tool-decision:before {
 	content:"\f1ee";
 }
 
 
-.icon-tool-end-order-forward:before {
+.icon-tool-delete-item-flow:before {
 	content:"\f1ef";
 }
 
 
-.icon-tool-end-order-hide:before {
+.icon-tool-delete-message:before {
 	content:"\f1f0";
 }
 
 
-.icon-tool-entry-activity:before {
+.icon-tool-delete:before {
 	content:"\f1f1";
 }
 
 
-.icon-tool-enumeration-literal:before {
+.icon-tool-dependant-package:before {
 	content:"\f1f2";
 }
 
 
-.icon-tool-erd-column-key:before {
+.icon-tool-depending-package:before {
 	content:"\f1f3";
 }
 
 
-.icon-tool-erd-column-non-key:before {
+.icon-tool-deployed-artifact:before {
 	content:"\f1f4";
 }
 
 
-.icon-tool-erd-column:before {
+.icon-tool-deployed-component:before {
 	content:"\f1f5";
 }
 
 
-.icon-tool-erd-identifying:before {
+.icon-tool-do-activity:before {
 	content:"\f1f6";
 }
 
 
-.icon-tool-erd-many-to-many:before {
+.icon-tool-edit:before {
 	content:"\f1f7";
 }
 
 
-.icon-tool-erd-many:before {
+.icon-tool-effect:before {
 	content:"\f1f8";
 }
 
 
-.icon-tool-erd-non-identifying:before {
+.icon-tool-end-order-backward:before {
 	content:"\f1f9";
 }
 
 
-.icon-tool-erd-one-to-many:before {
+.icon-tool-end-order-forward:before {
 	content:"\f1fa";
 }
 
 
-.icon-tool-erd-one-to-one:before {
+.icon-tool-end-order-hide:before {
 	content:"\f1fb";
 }
 
 
-.icon-tool-erd-one:before {
+.icon-tool-entry-activity:before {
 	content:"\f1fc";
 }
 
 
-.icon-tool-erd-zero-many:before {
+.icon-tool-enumeration-literal:before {
 	content:"\f1fd";
 }
 
 
-.icon-tool-erd-zero-one:before {
+.icon-tool-erd-column-key:before {
 	content:"\f1fe";
 }
 
 
-.icon-tool-event:before {
+.icon-tool-erd-column-non-key:before {
 	content:"\f1ff";
 }
 
 
-.icon-tool-exit-activity:before {
+.icon-tool-erd-column:before {
 	content:"\f200";
 }
 
 
-.icon-tool-extended-usecase:before {
+.icon-tool-erd-identifying:before {
 	content:"\f201";
 }
 
 
-.icon-tool-extension-point:before {
+.icon-tool-erd-many-to-many:before {
 	content:"\f202";
 }
 
 
-.icon-tool-fc-incoming-decision:before {
+.icon-tool-erd-many:before {
 	content:"\f203";
 }
 
 
-.icon-tool-fc-incoming-process:before {
+.icon-tool-erd-non-identifying:before {
 	content:"\f204";
 }
 
 
-.icon-tool-fc-outgoing-decision:before {
+.icon-tool-erd-one-to-many:before {
 	content:"\f205";
 }
 
 
-.icon-tool-fc-outgoing-process:before {
+.icon-tool-erd-one-to-one:before {
 	content:"\f206";
 }
 
 
-.icon-tool-fill-color:before {
+.icon-tool-erd-one:before {
 	content:"\f207";
 }
 
 
-.icon-tool-final-node:before {
+.icon-tool-erd-zero-many:before {
 	content:"\f208";
 }
 
 
-.icon-tool-final-state:before {
+.icon-tool-erd-zero-one:before {
 	content:"\f209";
 }
 
 
-.icon-tool-flow-property:before {
+.icon-tool-event:before {
 	content:"\f20a";
 }
 
 
-.icon-tool-font-color:before {
+.icon-tool-exit-activity:before {
 	content:"\f20b";
 }
 
 
-.icon-tool-fork:before {
+.icon-tool-extended-usecase:before {
 	content:"\f20c";
 }
 
 
-.icon-tool-forward-message:before {
+.icon-tool-extension-point:before {
 	content:"\f20d";
 }
 
 
-.icon-tool-found-message:before {
+.icon-tool-fc-incoming-decision:before {
 	content:"\f20e";
 }
 
 
-.icon-tool-gcp-icon-zone-account:before {
+.icon-tool-fc-incoming-process:before {
 	content:"\f20f";
 }
 
 
-.icon-tool-gcp-icon-zone-external-data-sources:before {
+.icon-tool-fc-outgoing-decision:before {
 	content:"\f210";
 }
 
 
-.icon-tool-gcp-icon-zone-external-firstparty-infrastructure:before {
+.icon-tool-fc-outgoing-process:before {
 	content:"\f211";
 }
 
 
-.icon-tool-gcp-icon-zone-external-saas-providers:before {
+.icon-tool-fill-color:before {
 	content:"\f212";
 }
 
 
-.icon-tool-gcp-icon-zone-external-thirdparty-infrastructure:before {
+.icon-tool-final-node:before {
 	content:"\f213";
 }
 
 
-.icon-tool-gcp-icon-zone-firewall:before {
+.icon-tool-final-state:before {
 	content:"\f214";
 }
 
 
-.icon-tool-gcp-icon-zone-infrastructure-system:before {
+.icon-tool-flow-property:before {
 	content:"\f215";
 }
 
 
-.icon-tool-gcp-icon-zone-instance-group:before {
+.icon-tool-font-color:before {
 	content:"\f216";
 }
 
 
-.icon-tool-gcp-icon-zone-kubernetes-cluster:before {
+.icon-tool-fork:before {
 	content:"\f217";
 }
 
 
-.icon-tool-gcp-icon-zone-logical-group:before {
+.icon-tool-forward-message:before {
 	content:"\f218";
 }
 
 
-.icon-tool-gcp-icon-zone-on-premises:before {
+.icon-tool-found-message:before {
 	content:"\f219";
 }
 
 
-.icon-tool-gcp-icon-zone-optional:before {
+.icon-tool-gcp-icon-zone-account:before {
 	content:"\f21a";
 }
 
 
-.icon-tool-gcp-icon-zone-pod:before {
+.icon-tool-gcp-icon-zone-external-data-sources:before {
 	content:"\f21b";
 }
 
 
-.icon-tool-gcp-icon-zone-project:before {
+.icon-tool-gcp-icon-zone-external-firstparty-infrastructure:before {
 	content:"\f21c";
 }
 
 
-.icon-tool-gcp-icon-zone-region:before {
+.icon-tool-gcp-icon-zone-external-saas-providers:before {
 	content:"\f21d";
 }
 
 
-.icon-tool-gcp-icon-zone-replica-pool:before {
+.icon-tool-gcp-icon-zone-external-thirdparty-infrastructure:before {
 	content:"\f21e";
 }
 
 
-.icon-tool-gcp-icon-zone-sub-network:before {
+.icon-tool-gcp-icon-zone-firewall:before {
 	content:"\f21f";
 }
 
 
-.icon-tool-gcp-icon-zone-system:before {
+.icon-tool-gcp-icon-zone-infrastructure-system:before {
 	content:"\f220";
 }
 
 
-.icon-tool-gcp-icon-zone-user:before {
+.icon-tool-gcp-icon-zone-instance-group:before {
 	content:"\f221";
 }
 
 
-.icon-tool-gcp-icon-zone-zone:before {
+.icon-tool-gcp-icon-zone-kubernetes-cluster:before {
 	content:"\f222";
 }
 
 
-.icon-tool-gcp-icon:before {
+.icon-tool-gcp-icon-zone-logical-group:before {
 	content:"\f223";
 }
 
 
-.icon-tool-head-end-style-flat:before {
+.icon-tool-gcp-icon-zone-on-premises:before {
 	content:"\f224";
 }
 
 
-.icon-tool-head-end-style-solid:before {
+.icon-tool-gcp-icon-zone-optional:before {
 	content:"\f225";
 }
 
 
-.icon-tool-head-end-style-stick:before {
+.icon-tool-gcp-icon-zone-pod:before {
 	content:"\f226";
 }
 
 
-.icon-tool-included-usecase:before {
+.icon-tool-gcp-icon-zone-project:before {
 	content:"\f227";
 }
 
 
-.icon-tool-incoming-control-flow:before {
+.icon-tool-gcp-icon-zone-region:before {
 	content:"\f228";
 }
 
 
-.icon-tool-incoming-external-entity:before {
+.icon-tool-gcp-icon-zone-replica-pool:before {
 	content:"\f229";
 }
 
 
-.icon-tool-incoming-object-flow:before {
+.icon-tool-gcp-icon-zone-sub-network:before {
 	content:"\f22a";
 }
 
 
-.icon-tool-incoming-process:before {
+.icon-tool-gcp-icon-zone-system:before {
 	content:"\f22b";
 }
 
 
-.icon-tool-incoming-transition:before {
+.icon-tool-gcp-icon-zone-user:before {
 	content:"\f22c";
 }
 
 
-.icon-tool-initial-node:before {
+.icon-tool-gcp-icon-zone-zone:before {
 	content:"\f22d";
 }
 
 
-.icon-tool-initial-state:before {
+.icon-tool-gcp-icon:before {
 	content:"\f22e";
 }
 
 
-.icon-tool-input-pin:before {
+.icon-tool-head-end-style-flat:before {
 	content:"\f22f";
 }
 
 
-.icon-tool-interface:before {
+.icon-tool-head-end-style-solid:before {
 	content:"\f230";
 }
 
 
-.icon-tool-internal-transition:before {
+.icon-tool-head-end-style-stick:before {
 	content:"\f231";
 }
 
 
-.icon-tool-join:before {
+.icon-tool-included-usecase:before {
 	content:"\f232";
 }
 
 
-.icon-tool-line-color:before {
+.icon-tool-incoming-control-flow:before {
 	content:"\f233";
 }
 
 
-.icon-tool-linemode-dashed:before {
+.icon-tool-incoming-external-entity:before {
 	content:"\f234";
 }
 
 
-.icon-tool-linemode-dotted:before {
+.icon-tool-incoming-object-flow:before {
 	content:"\f235";
 }
 
 
-.icon-tool-linemode-solid:before {
+.icon-tool-incoming-process:before {
 	content:"\f236";
 }
 
 
-.icon-tool-linked-object:before {
+.icon-tool-incoming-transition:before {
 	content:"\f237";
 }
 
 
-.icon-tool-lock:before {
+.icon-tool-initial-node:before {
 	content:"\f238";
 }
 
 
-.icon-tool-lost-message:before {
+.icon-tool-initial-state:before {
 	content:"\f239";
 }
 
 
-.icon-tool-merge:before {
+.icon-tool-input-pin:before {
 	content:"\f23a";
 }
 
 
-.icon-tool-message-from-gate:before {
+.icon-tool-interface:before {
 	content:"\f23b";
 }
 
 
-.icon-tool-message-lifeline:before {
+.icon-tool-internal-transition:before {
 	content:"\f23c";
 }
 
 
-.icon-tool-message-to-gate:before {
+.icon-tool-join:before {
 	content:"\f23d";
 }
 
 
-.icon-tool-MMAddNodeLeft:before {
+.icon-tool-line-color:before {
 	content:"\f23e";
 }
 
 
-.icon-tool-MMAddNodeRight:before {
+.icon-tool-linemode-dashed:before {
 	content:"\f23f";
 }
 
 
-.icon-tool-movedown:before {
+.icon-tool-linemode-dotted:before {
 	content:"\f240";
 }
 
 
-.icon-tool-moveup:before {
+.icon-tool-linemode-solid:before {
 	content:"\f241";
 }
 
 
-.icon-tool-navigable:before {
+.icon-tool-linked-object:before {
 	content:"\f242";
 }
 
 
-.icon-tool-not-navigable:before {
+.icon-tool-lock:before {
 	content:"\f243";
 }
 
 
-.icon-tool-note:before {
+.icon-tool-lost-message:before {
 	content:"\f244";
 }
 
 
-.icon-tool-oblique:before {
+.icon-tool-merge:before {
 	content:"\f245";
 }
 
 
-.icon-tool-operand:before {
+.icon-tool-message-from-gate:before {
 	content:"\f246";
 }
 
 
-.icon-tool-operation:before {
+.icon-tool-message-lifeline:before {
 	content:"\f247";
 }
 
 
-.icon-tool-outgoing-control-flow:before {
+.icon-tool-message-to-gate:before {
 	content:"\f248";
 }
 
 
-.icon-tool-outgoing-datastore:before {
+.icon-tool-MMAddNodeLeft:before {
 	content:"\f249";
 }
 
 
-.icon-tool-outgoing-object-flow:before {
+.icon-tool-MMAddNodeRight:before {
 	content:"\f24a";
 }
 
 
-.icon-tool-outgoing-process:before {
+.icon-tool-movedown:before {
 	content:"\f24b";
 }
 
 
-.icon-tool-outgoing-transition:before {
+.icon-tool-moveup:before {
 	content:"\f24c";
 }
 
 
-.icon-tool-output-pin:before {
+.icon-tool-navigable:before {
 	content:"\f24d";
 }
 
 
-.icon-tool-package:before {
+.icon-tool-not-navigable:before {
 	content:"\f24e";
 }
 
 
-.icon-tool-parameter-property:before {
+.icon-tool-note:before {
 	content:"\f24f";
 }
 
 
-.icon-tool-part-property:before {
+.icon-tool-oblique:before {
 	content:"\f250";
 }
 
 
-.icon-tool-part:before {
+.icon-tool-operand:before {
 	content:"\f251";
 }
 
 
-.icon-tool-port:before {
+.icon-tool-operation:before {
 	content:"\f252";
 }
 
 
-.icon-tool-private:before {
+.icon-tool-outgoing-control-flow:before {
 	content:"\f253";
 }
 
 
-.icon-tool-property:before {
+.icon-tool-outgoing-datastore:before {
 	content:"\f254";
 }
 
 
-.icon-tool-protected:before {
+.icon-tool-outgoing-object-flow:before {
 	content:"\f255";
 }
 
 
-.icon-tool-public:before {
+.icon-tool-outgoing-process:before {
 	content:"\f256";
 }
 
 
-.icon-tool-realizing-class:before {
+.icon-tool-outgoing-transition:before {
 	content:"\f257";
 }
 
 
-.icon-tool-reception:before {
+.icon-tool-output-pin:before {
 	content:"\f258";
 }
 
 
-.icon-tool-rectilinear:before {
+.icon-tool-package:before {
 	content:"\f259";
 }
 
 
-.icon-tool-reference-property:before {
+.icon-tool-parameter-property:before {
 	content:"\f25a";
 }
 
 
-.icon-tool-region:before {
+.icon-tool-part-property:before {
 	content:"\f25b";
 }
 
 
-.icon-tool-reply-message:before {
+.icon-tool-part:before {
 	content:"\f25c";
 }
 
 
-.icon-tool-reply:before {
+.icon-tool-port:before {
 	content:"\f25d";
 }
 
 
-.icon-tool-required-interface:before {
+.icon-tool-private:before {
 	content:"\f25e";
 }
 
 
-.icon-tool-reverse-message:before {
+.icon-tool-property:before {
 	content:"\f25f";
 }
 
 
-.icon-tool-rounded-rectilinear:before {
+.icon-tool-protected:before {
 	content:"\f260";
 }
 
 
-.icon-tool-search:before {
+.icon-tool-public:before {
 	content:"\f261";
 }
 
 
-.icon-tool-select-block:before {
+.icon-tool-realizing-class:before {
 	content:"\f262";
 }
 
 
-.icon-tool-select-constraint-block:before {
+.icon-tool-reception:before {
 	content:"\f263";
 }
 
 
-.icon-tool-select-item-flow:before {
+.icon-tool-rectilinear:before {
 	content:"\f264";
 }
 
 
-.icon-tool-select-operation:before {
+.icon-tool-reference-property:before {
 	content:"\f265";
 }
 
 
-.icon-tool-select-owner-attribute:before {
+.icon-tool-region:before {
 	content:"\f266";
 }
 
 
-.icon-tool-select-signal:before {
+.icon-tool-reply-message:before {
 	content:"\f267";
 }
 
 
-.icon-tool-select-type:before {
+.icon-tool-reply:before {
 	content:"\f268";
 }
 
 
-.icon-tool-select-value-type:before {
+.icon-tool-required-interface:before {
 	content:"\f269";
 }
 
 
-.icon-tool-select:before {
+.icon-tool-reverse-message:before {
 	content:"\f26a";
 }
 
 
-.icon-tool-self-connector:before {
+.icon-tool-rounded-rectilinear:before {
 	content:"\f26b";
 }
 
 
-.icon-tool-self-message:before {
+.icon-tool-search:before {
 	content:"\f26c";
 }
 
 
-.icon-tool-send-to-back:before {
+.icon-tool-select-block:before {
 	content:"\f26d";
 }
 
 
-.icon-tool-set-height-equal:before {
+.icon-tool-select-constraint-block:before {
 	content:"\f26e";
 }
 
 
-.icon-tool-set-size-equal:before {
+.icon-tool-select-item-flow:before {
 	content:"\f26f";
 }
 
 
-.icon-tool-set-width-equal:before {
+.icon-tool-select-operation:before {
 	content:"\f270";
 }
 
 
-.icon-tool-shared:before {
+.icon-tool-select-owner-attribute:before {
 	content:"\f271";
 }
 
 
-.icon-tool-show-namespace:before {
+.icon-tool-select-signal:before {
 	content:"\f272";
 }
 
 
-.icon-tool-show-property:before {
+.icon-tool-select-type:before {
 	content:"\f273";
 }
 
 
-.icon-tool-show-shadow:before {
+.icon-tool-select-value-type:before {
 	content:"\f274";
 }
 
 
-.icon-tool-show-type:before {
+.icon-tool-select:before {
 	content:"\f275";
 }
 
 
-.icon-tool-show-visibility:before {
+.icon-tool-self-connector:before {
 	content:"\f276";
 }
 
 
-.icon-tool-slot:before {
+.icon-tool-self-message:before {
 	content:"\f277";
 }
 
 
-.icon-tool-stereotype:before {
+.icon-tool-send-to-back:before {
 	content:"\f278";
 }
 
 
-.icon-tool-subactor:before {
+.icon-tool-set-height-equal:before {
 	content:"\f279";
 }
 
 
-.icon-tool-subclass:before {
+.icon-tool-set-size-equal:before {
 	content:"\f27a";
 }
 
 
-.icon-tool-subinterface:before {
+.icon-tool-set-width-equal:before {
 	content:"\f27b";
 }
 
 
-.icon-tool-subpackage:before {
+.icon-tool-shared:before {
 	content:"\f27c";
 }
 
 
-.icon-tool-substereotype:before {
+.icon-tool-show-namespace:before {
 	content:"\f27d";
 }
 
 
-.icon-tool-superactor:before {
+.icon-tool-show-property:before {
 	content:"\f27e";
 }
 
 
-.icon-tool-superclass:before {
+.icon-tool-show-shadow:before {
 	content:"\f27f";
 }
 
 
-.icon-tool-superinterface:before {
+.icon-tool-show-type:before {
 	content:"\f280";
 }
 
 
-.icon-tool-superstereotype:before {
+.icon-tool-show-visibility:before {
 	content:"\f281";
 }
 
 
-.icon-tool-suppress-attributes:before {
+.icon-tool-slot:before {
 	content:"\f282";
 }
 
 
-.icon-tool-suppress-columns:before {
+.icon-tool-stereotype:before {
 	content:"\f283";
 }
 
 
-.icon-tool-suppress-literals:before {
+.icon-tool-subactor:before {
 	content:"\f284";
 }
 
 
-.icon-tool-suppress-operations:before {
+.icon-tool-subclass:before {
 	content:"\f285";
 }
 
 
-.icon-tool-suppress-receptions:before {
+.icon-tool-subinterface:before {
 	content:"\f286";
 }
 
 
-.icon-tool-synch-call:before {
+.icon-tool-subpackage:before {
 	content:"\f287";
 }
 
 
-.icon-tool-tail-end-style-flat:before {
+.icon-tool-substereotype:before {
 	content:"\f288";
 }
 
 
-.icon-tool-tail-end-style-solid:before {
+.icon-tool-superactor:before {
 	content:"\f289";
 }
 
 
-.icon-tool-tail-end-style-stick:before {
+.icon-tool-superclass:before {
 	content:"\f28a";
 }
 
 
-.icon-tool-template-parameter-substitution:before {
+.icon-tool-superinterface:before {
 	content:"\f28b";
 }
 
 
-.icon-tool-template-parameter:before {
+.icon-tool-superstereotype:before {
 	content:"\f28c";
 }
 
 
-.icon-tool-text-align-bottom:before {
+.icon-tool-suppress-attributes:before {
 	content:"\f28d";
 }
 
 
-.icon-tool-text-align-center:before {
+.icon-tool-suppress-columns:before {
 	content:"\f28e";
 }
 
 
-.icon-tool-text-align-left:before {
+.icon-tool-suppress-literals:before {
 	content:"\f28f";
 }
 
 
-.icon-tool-text-align-middle:before {
+.icon-tool-suppress-operations:before {
 	content:"\f290";
 }
 
 
-.icon-tool-text-align-right:before {
+.icon-tool-suppress-receptions:before {
 	content:"\f291";
 }
 
 
-.icon-tool-text-align-top:before {
+.icon-tool-synch-call:before {
 	content:"\f292";
 }
 
 
-.icon-tool-time-segment:before {
+.icon-tool-tail-end-style-flat:before {
 	content:"\f293";
 }
 
 
-.icon-tool-unspecified:before {
+.icon-tool-tail-end-style-solid:before {
 	content:"\f294";
 }
 
 
-.icon-tool-validation-error:before {
+.icon-tool-tail-end-style-stick:before {
 	content:"\f295";
 }
 
 
-.icon-tool-validation-ok:before {
+.icon-tool-template-parameter-substitution:before {
 	content:"\f296";
 }
 
 
-.icon-tool-value-property:before {
+.icon-tool-template-parameter:before {
 	content:"\f297";
 }
 
 
-.icon-tool-WFAddTab:before {
+.icon-tool-text-align-bottom:before {
 	content:"\f298";
 }
 
 
-.icon-tool-wordwrap:before {
+.icon-tool-text-align-center:before {
 	content:"\f299";
 }
 
 
-.icon-UMLAcceptSignal:before {
+.icon-tool-text-align-left:before {
 	content:"\f29a";
 }
 
 
-.icon-UMLAcceptTimeEvent:before {
+.icon-tool-text-align-middle:before {
 	content:"\f29b";
 }
 
 
-.icon-UMLAction:before {
+.icon-tool-text-align-right:before {
 	content:"\f29c";
 }
 
 
-.icon-UMLActivity:before {
+.icon-tool-text-align-top:before {
 	content:"\f29d";
 }
 
 
-.icon-UMLActivityDiagram:before {
+.icon-tool-time-segment:before {
 	content:"\f29e";
 }
 
 
-.icon-UMLActivityEdgeConnector:before {
+.icon-tool-unspecified:before {
 	content:"\f29f";
 }
 
 
-.icon-UMLActivityFinalNode:before {
+.icon-tool-validation-error:before {
 	content:"\f2a0";
 }
 
 
-.icon-UMLActivityInterrupt:before {
+.icon-tool-validation-ok:before {
 	content:"\f2a1";
 }
 
 
-.icon-UMLActivityParameterNode:before {
+.icon-tool-value-property:before {
 	content:"\f2a2";
 }
 
 
-.icon-UMLActor:before {
+.icon-tool-WFAddTab:before {
 	content:"\f2a3";
 }
 
 
-.icon-UMLAggregation:before {
+.icon-tool-wordwrap:before {
 	content:"\f2a4";
 }
 
 
-.icon-UMLArtifact:before {
+.icon-UMLAcceptSignal:before {
 	content:"\f2a5";
 }
 
 
-.icon-UMLArtifactInstance:before {
+.icon-UMLAcceptTimeEvent:before {
 	content:"\f2a6";
 }
 
 
-.icon-UMLAssociation:before {
+.icon-UMLAction:before {
 	content:"\f2a7";
 }
 
 
-.icon-UMLAssociationClassLink:before {
+.icon-UMLActivity:before {
 	content:"\f2a8";
 }
 
 
-.icon-UMLAssociationEnd:before {
+.icon-UMLActivityDiagram:before {
 	content:"\f2a9";
 }
 
 
-.icon-UMLAsyncMessage:before {
+.icon-UMLActivityEdgeConnector:before {
 	content:"\f2aa";
 }
 
 
-.icon-UMLAsyncSignalMessage:before {
+.icon-UMLActivityFinalNode:before {
 	content:"\f2ab";
 }
 
 
-.icon-UMLAttribute:before {
+.icon-UMLActivityInterrupt:before {
 	content:"\f2ac";
 }
 
 
-.icon-UMLBoundary:before {
+.icon-UMLActivityParameterNode:before {
 	content:"\f2ad";
 }
 
 
-.icon-UMLCentralBufferNode:before {
+.icon-UMLActor:before {
 	content:"\f2ae";
 }
 
 
-.icon-UMLChoice:before {
+.icon-UMLAggregation:before {
 	content:"\f2af";
 }
 
 
-.icon-UMLClass:before {
+.icon-UMLArtifact:before {
 	content:"\f2b0";
 }
 
 
-.icon-UMLClassDiagram:before {
+.icon-UMLArtifactInstance:before {
 	content:"\f2b1";
 }
 
 
-.icon-UMLCollaboration:before {
+.icon-UMLAssociation:before {
 	content:"\f2b2";
 }
 
 
-.icon-UMLCollaborationUse:before {
+.icon-UMLAssociationClassLink:before {
 	content:"\f2b3";
 }
 
 
-.icon-UMLCombinedFragment:before {
+.icon-UMLAssociationEnd:before {
 	content:"\f2b4";
 }
 
 
-.icon-UMLCommunicationDiagram:before {
+.icon-UMLAsyncMessage:before {
 	content:"\f2b5";
 }
 
 
-.icon-UMLCommunicationPath:before {
+.icon-UMLAsyncSignalMessage:before {
 	content:"\f2b6";
 }
 
 
-.icon-UMLComponent:before {
+.icon-UMLAttribute:before {
 	content:"\f2b7";
 }
 
 
-.icon-UMLComponentDiagram:before {
+.icon-UMLBoundary:before {
 	content:"\f2b8";
 }
 
 
-.icon-UMLComponentInstance:before {
+.icon-UMLCentralBufferNode:before {
 	content:"\f2b9";
 }
 
 
-.icon-UMLComponentRealization:before {
+.icon-UMLChoice:before {
 	content:"\f2ba";
 }
 
 
-.icon-UMLCompositeState:before {
+.icon-UMLClass:before {
 	content:"\f2bb";
 }
 
 
-.icon-UMLCompositeStructureDiagram:before {
+.icon-UMLClassDiagram:before {
 	content:"\f2bc";
 }
 
 
-.icon-UMLComposition:before {
+.icon-UMLCollaboration:before {
 	content:"\f2bd";
 }
 
 
-.icon-UMLConnectionPointReference:before {
+.icon-UMLCollaborationUse:before {
 	content:"\f2be";
 }
 
 
-.icon-UMLConnector:before {
+.icon-UMLCombinedFragment:before {
 	content:"\f2bf";
 }
 
 
-.icon-UMLConnectorEnd:before {
+.icon-UMLCommunicationDiagram:before {
 	content:"\f2c0";
 }
 
 
-.icon-UMLConstraint:before {
+.icon-UMLCommunicationPath:before {
 	content:"\f2c1";
 }
 
 
-.icon-UMLContainment:before {
+.icon-UMLComponent:before {
 	content:"\f2c2";
 }
 
 
-.icon-UMLContinuation:before {
+.icon-UMLComponentDiagram:before {
 	content:"\f2c3";
 }
 
 
-.icon-UMLControl:before {
+.icon-UMLComponentInstance:before {
 	content:"\f2c4";
 }
 
 
-.icon-UMLControlFlow:before {
+.icon-UMLComponentRealization:before {
 	content:"\f2c5";
 }
 
 
-.icon-UMLCreateMessage:before {
+.icon-UMLCompositeState:before {
 	content:"\f2c6";
 }
 
 
-.icon-UMLDataStoreNode:before {
+.icon-UMLCompositeStructureDiagram:before {
 	content:"\f2c7";
 }
 
 
-.icon-UMLDataType:before {
+.icon-UMLComposition:before {
 	content:"\f2c8";
 }
 
 
-.icon-UMLDecisionNode:before {
+.icon-UMLConnectionPointReference:before {
 	content:"\f2c9";
 }
 
 
-.icon-UMLDeepHistory:before {
+.icon-UMLConnector:before {
 	content:"\f2ca";
 }
 
 
-.icon-UMLDeleteMessage:before {
+.icon-UMLConnectorEnd:before {
 	content:"\f2cb";
 }
 
 
-.icon-UMLDependency:before {
+.icon-UMLConstraint:before {
 	content:"\f2cc";
 }
 
 
-.icon-UMLDeployment:before {
+.icon-UMLContainment:before {
 	content:"\f2cd";
 }
 
 
-.icon-UMLDeploymentDiagram:before {
+.icon-UMLContinuation:before {
 	content:"\f2ce";
 }
 
 
-.icon-UMLDirectedAssociation:before {
+.icon-UMLControl:before {
 	content:"\f2cf";
 }
 
 
-.icon-UMLDirectedLink:before {
+.icon-UMLControlFlow:before {
 	content:"\f2d0";
 }
 
 
-.icon-UMLDoActivity:before {
+.icon-UMLCreateMessage:before {
 	content:"\f2d1";
 }
 
 
-.icon-UMLDurationConstraint:before {
+.icon-UMLDataStoreNode:before {
 	content:"\f2d2";
 }
 
 
-.icon-UMLEffect:before {
+.icon-UMLDataType:before {
 	content:"\f2d3";
 }
 
 
-.icon-UMLEndpoint:before {
+.icon-UMLDecisionNode:before {
 	content:"\f2d4";
 }
 
 
-.icon-UMLEntity:before {
+.icon-UMLDeepHistory:before {
 	content:"\f2d5";
 }
 
 
-.icon-UMLEntryActivity:before {
+.icon-UMLDeleteMessage:before {
 	content:"\f2d6";
 }
 
 
-.icon-UMLEntryPoint:before {
+.icon-UMLDependency:before {
 	content:"\f2d7";
 }
 
 
-.icon-UMLEnumeration:before {
+.icon-UMLDeployment:before {
 	content:"\f2d8";
 }
 
 
-.icon-UMLEnumerationLiteral:before {
+.icon-UMLDeploymentDiagram:before {
 	content:"\f2d9";
 }
 
 
-.icon-UMLEvent:before {
+.icon-UMLDirectedAssociation:before {
 	content:"\f2da";
 }
 
 
-.icon-UMLExceptionHandler:before {
+.icon-UMLDirectedLink:before {
 	content:"\f2db";
 }
 
 
-.icon-UMLExitActivity:before {
+.icon-UMLDoActivity:before {
 	content:"\f2dc";
 }
 
 
-.icon-UMLExitPoint:before {
+.icon-UMLDurationConstraint:before {
 	content:"\f2dd";
 }
 
 
-.icon-UMLExpansionNode:before {
+.icon-UMLEffect:before {
 	content:"\f2de";
 }
 
 
-.icon-UMLExpansionRegion:before {
+.icon-UMLEndpoint:before {
 	content:"\f2df";
 }
 
 
-.icon-UMLExtend:before {
+.icon-UMLEntity:before {
 	content:"\f2e0";
 }
 
 
-.icon-UMLExtension:before {
+.icon-UMLEntryActivity:before {
 	content:"\f2e1";
 }
 
 
-.icon-UMLExtensionPoint:before {
+.icon-UMLEntryPoint:before {
 	content:"\f2e2";
 }
 
 
-.icon-UMLFinalState:before {
+.icon-UMLEnumeration:before {
 	content:"\f2e3";
 }
 
 
-.icon-UMLFlowFinalNode:before {
+.icon-UMLEnumerationLiteral:before {
 	content:"\f2e4";
 }
 
 
-.icon-UMLFork:before {
+.icon-UMLEvent:before {
 	content:"\f2e5";
 }
 
 
-.icon-UMLForkNode:before {
+.icon-UMLExceptionHandler:before {
 	content:"\f2e6";
 }
 
 
-.icon-UMLForwardMessage:before {
+.icon-UMLExitActivity:before {
 	content:"\f2e7";
 }
 
 
-.icon-UMLFoundMessage:before {
+.icon-UMLExitPoint:before {
 	content:"\f2e8";
 }
 
 
-.icon-UMLFrame:before {
+.icon-UMLExpansionNode:before {
 	content:"\f2e9";
 }
 
 
-.icon-UMLGate:before {
+.icon-UMLExpansionRegion:before {
 	content:"\f2ea";
 }
 
 
-.icon-UMLGeneralization:before {
+.icon-UMLExtend:before {
 	content:"\f2eb";
 }
 
 
-.icon-UMLImage:before {
+.icon-UMLExtension:before {
 	content:"\f2ec";
 }
 
 
-.icon-UMLInclude:before {
+.icon-UMLExtensionPoint:before {
 	content:"\f2ed";
 }
 
 
-.icon-UMLInformationFlow:before {
+.icon-UMLFinalState:before {
 	content:"\f2ee";
 }
 
 
-.icon-UMLInformationFlowDiagram:before {
+.icon-UMLFlowFinalNode:before {
 	content:"\f2ef";
 }
 
 
-.icon-UMLInformationItem:before {
+.icon-UMLFork:before {
 	content:"\f2f0";
 }
 
 
-.icon-UMLInitialNode:before {
+.icon-UMLForkNode:before {
 	content:"\f2f1";
 }
 
 
-.icon-UMLInitialState:before {
+.icon-UMLForwardMessage:before {
 	content:"\f2f2";
 }
 
 
-.icon-UMLInputExpansionNode:before {
+.icon-UMLFoundMessage:before {
 	content:"\f2f3";
 }
 
 
-.icon-UMLInputPin:before {
+.icon-UMLFrame:before {
 	content:"\f2f4";
 }
 
 
-.icon-UMLInteraction:before {
+.icon-UMLGate:before {
 	content:"\f2f5";
 }
 
 
-.icon-UMLInteractionOperand:before {
+.icon-UMLGeneralization:before {
 	content:"\f2f6";
 }
 
 
-.icon-UMLInteractionOverviewDiagram:before {
+.icon-UMLImage:before {
 	content:"\f2f7";
 }
 
 
-.icon-UMLInteractionUse:before {
+.icon-UMLInclude:before {
 	content:"\f2f8";
 }
 
 
-.icon-UMLInterface:before {
+.icon-UMLInformationFlow:before {
 	content:"\f2f9";
 }
 
 
-.icon-UMLInterfaceRealization:before {
+.icon-UMLInformationFlowDiagram:before {
 	content:"\f2fa";
 }
 
 
-.icon-UMLInterruptibleActivityRegion:before {
+.icon-UMLInformationItem:before {
 	content:"\f2fb";
 }
 
 
-.icon-UMLJoin:before {
+.icon-UMLInitialNode:before {
 	content:"\f2fc";
 }
 
 
-.icon-UMLJoinNode:before {
+.icon-UMLInitialState:before {
 	content:"\f2fd";
 }
 
 
-.icon-UMLJunction:before {
+.icon-UMLInputExpansionNode:before {
 	content:"\f2fe";
 }
 
 
-.icon-UMLLifeline:before {
+.icon-UMLInputPin:before {
 	content:"\f2ff";
 }
 
 
-.icon-UMLLink:before {
+.icon-UMLInteraction:before {
 	content:"\f300";
 }
 
 
-.icon-UMLLinkEnd:before {
+.icon-UMLInteractionOperand:before {
 	content:"\f301";
 }
 
 
-.icon-UMLLinkObjectLink:before {
+.icon-UMLInteractionOverviewDiagram:before {
 	content:"\f302";
 }
 
 
-.icon-UMLLostMessage:before {
+.icon-UMLInteractionUse:before {
 	content:"\f303";
 }
 
 
-.icon-UMLMergeNode:before {
+.icon-UMLInterface:before {
 	content:"\f304";
 }
 
 
-.icon-UMLMessage:before {
+.icon-UMLInterfaceRealization:before {
 	content:"\f305";
 }
 
 
-.icon-UMLMetaClass:before {
+.icon-UMLInterruptibleActivityRegion:before {
 	content:"\f306";
 }
 
 
-.icon-UMLModel:before {
+.icon-UMLJoin:before {
 	content:"\f307";
 }
 
 
-.icon-UMLNaryAssociationNode:before {
+.icon-UMLJoinNode:before {
 	content:"\f308";
 }
 
 
-.icon-UMLNode:before {
+.icon-UMLJunction:before {
 	content:"\f309";
 }
 
 
-.icon-UMLNodeInstance:before {
+.icon-UMLLifeline:before {
 	content:"\f30a";
 }
 
 
-.icon-UMLNote:before {
+.icon-UMLLink:before {
 	content:"\f30b";
 }
 
 
-.icon-UMLNoteLink:before {
+.icon-UMLLinkEnd:before {
 	content:"\f30c";
 }
 
 
-.icon-UMLObject:before {
+.icon-UMLLinkObjectLink:before {
 	content:"\f30d";
 }
 
 
-.icon-UMLObjectDiagram:before {
+.icon-UMLLostMessage:before {
 	content:"\f30e";
 }
 
 
-.icon-UMLObjectFlow:before {
+.icon-UMLMergeNode:before {
 	content:"\f30f";
 }
 
 
-.icon-UMLObjectNode:before {
+.icon-UMLMessage:before {
 	content:"\f310";
 }
 
 
-.icon-UMLOpaqueBehavior:before {
+.icon-UMLMetaClass:before {
 	content:"\f311";
 }
 
 
-.icon-UMLOperation:before {
+.icon-UMLModel:before {
 	content:"\f312";
 }
 
 
-.icon-UMLOrthogonalState:before {
+.icon-UMLNaryAssociationNode:before {
 	content:"\f313";
 }
 
 
-.icon-UMLOutputExpansionNode:before {
+.icon-UMLNode:before {
 	content:"\f314";
 }
 
 
-.icon-UMLOutputPin:before {
+.icon-UMLNodeInstance:before {
 	content:"\f315";
 }
 
 
-.icon-UMLPackage:before {
+.icon-UMLNote:before {
 	content:"\f316";
 }
 
 
-.icon-UMLPackageDiagram:before {
+.icon-UMLNoteLink:before {
 	content:"\f317";
 }
 
 
-.icon-UMLParameter:before {
+.icon-UMLObject:before {
 	content:"\f318";
 }
 
 
-.icon-UMLPart:before {
+.icon-UMLObjectDiagram:before {
 	content:"\f319";
 }
 
 
-.icon-UMLPort:before {
+.icon-UMLObjectFlow:before {
 	content:"\f31a";
 }
 
 
-.icon-UMLPrimitiveType:before {
+.icon-UMLObjectNode:before {
 	content:"\f31b";
 }
 
 
-.icon-UMLProfile:before {
+.icon-UMLOpaqueBehavior:before {
 	content:"\f31c";
 }
 
 
-.icon-UMLProfileDiagram:before {
+.icon-UMLOperation:before {
 	content:"\f31d";
 }
 
 
-.icon-UMLRealization:before {
+.icon-UMLOrthogonalState:before {
 	content:"\f31e";
 }
 
 
-.icon-UMLReception:before {
+.icon-UMLOutputExpansionNode:before {
 	content:"\f31f";
 }
 
 
-.icon-UMLRegion:before {
+.icon-UMLOutputPin:before {
 	content:"\f320";
 }
 
 
-.icon-UMLReplyMessage:before {
+.icon-UMLPackage:before {
 	content:"\f321";
 }
 
 
-.icon-UMLReverseMessage:before {
+.icon-UMLPackageDiagram:before {
 	content:"\f322";
 }
 
 
-.icon-UMLRoleBinding:before {
+.icon-UMLParameter:before {
 	content:"\f323";
 }
 
 
-.icon-UMLSelfConnector:before {
+.icon-UMLPart:before {
 	content:"\f324";
 }
 
 
-.icon-UMLSelfLink:before {
+.icon-UMLPort:before {
 	content:"\f325";
 }
 
 
-.icon-UMLSelfMessage:before {
+.icon-UMLPrimitiveType:before {
 	content:"\f326";
 }
 
 
-.icon-UMLSelfTransition:before {
+.icon-UMLProfile:before {
 	content:"\f327";
 }
 
 
-.icon-UMLSendSignal:before {
+.icon-UMLProfileDiagram:before {
 	content:"\f328";
 }
 
 
-.icon-UMLSequenceDiagram:before {
+.icon-UMLRealization:before {
 	content:"\f329";
 }
 
 
-.icon-UMLShallowHistory:before {
+.icon-UMLReception:before {
 	content:"\f32a";
 }
 
 
-.icon-UMLSignal:before {
+.icon-UMLRegion:before {
 	content:"\f32b";
 }
 
 
-.icon-UMLSlot:before {
+.icon-UMLReplyMessage:before {
 	content:"\f32c";
 }
 
 
-.icon-UMLStandardProfile-boundary:before {
+.icon-UMLReverseMessage:before {
 	content:"\f32d";
 }
 
 
-.icon-UMLStandardProfile-control:before {
+.icon-UMLRoleBinding:before {
 	content:"\f32e";
 }
 
 
-.icon-UMLStandardProfile-entity:before {
+.icon-UMLSelfConnector:before {
 	content:"\f32f";
 }
 
 
-.icon-UMLState:before {
+.icon-UMLSelfLink:before {
 	content:"\f330";
 }
 
 
-.icon-UMLStatechartDiagram:before {
+.icon-UMLSelfMessage:before {
 	content:"\f331";
 }
 
 
-.icon-UMLStateCondition:before {
+.icon-UMLSelfTransition:before {
 	content:"\f332";
 }
 
 
-.icon-UMLStateInvariant:before {
+.icon-UMLSendSignal:before {
 	content:"\f333";
 }
 
 
-.icon-UMLStateMachine:before {
+.icon-UMLSequenceDiagram:before {
 	content:"\f334";
 }
 
 
-.icon-UMLStereotype:before {
+.icon-UMLShallowHistory:before {
 	content:"\f335";
 }
 
 
-.icon-UMLStructuredActivityNode:before {
+.icon-UMLSignal:before {
 	content:"\f336";
 }
 
 
-.icon-UMLSubmachineState:before {
+.icon-UMLSlot:before {
 	content:"\f337";
 }
 
 
-.icon-UMLSubsystem:before {
+.icon-UMLStandardProfile-boundary:before {
 	content:"\f338";
 }
 
 
-.icon-UMLSwimlaneHorz:before {
+.icon-UMLStandardProfile-control:before {
 	content:"\f339";
 }
 
 
-.icon-UMLSwimlaneVert:before {
+.icon-UMLStandardProfile-entity:before {
 	content:"\f33a";
 }
 
 
-.icon-UMLTemplateBinding:before {
+.icon-UMLState:before {
 	content:"\f33b";
 }
 
 
-.icon-UMLTemplateParameter:before {
+.icon-UMLStatechartDiagram:before {
 	content:"\f33c";
 }
 
 
-.icon-UMLTemplateParameterSubstitution:before {
+.icon-UMLStateCondition:before {
 	content:"\f33d";
 }
 
 
-.icon-UMLTerminate:before {
+.icon-UMLStateInvariant:before {
 	content:"\f33e";
 }
 
 
-.icon-UMLText:before {
+.icon-UMLStateMachine:before {
 	content:"\f33f";
 }
 
 
-.icon-UMLTextBox:before {
+.icon-UMLStereotype:before {
 	content:"\f340";
 }
 
 
-.icon-UMLTimeConstraint:before {
+.icon-UMLStructuredActivityNode:before {
 	content:"\f341";
 }
 
 
-.icon-UMLTimeSegment:before {
+.icon-UMLSubmachineState:before {
 	content:"\f342";
 }
 
 
-.icon-UMLTimeTick:before {
+.icon-UMLSubsystem:before {
 	content:"\f343";
 }
 
 
-.icon-UMLTimingDiagram:before {
+.icon-UMLSwimlaneHorz:before {
 	content:"\f344";
 }
 
 
-.icon-UMLTimingLifeline:before {
+.icon-UMLSwimlaneVert:before {
 	content:"\f345";
 }
 
 
-.icon-UMLTransition:before {
+.icon-UMLTemplateBinding:before {
 	content:"\f346";
 }
 
 
-.icon-UMLUseCase:before {
+.icon-UMLTemplateParameter:before {
 	content:"\f347";
 }
 
 
-.icon-UMLUseCaseDiagram:before {
+.icon-UMLTemplateParameterSubstitution:before {
 	content:"\f348";
 }
 
 
-.icon-UMLUseCaseSubject:before {
+.icon-UMLTerminate:before {
 	content:"\f349";
 }
 
 
-.icon-WFAvatar:before {
+.icon-UMLText:before {
 	content:"\f34a";
 }
 
 
-.icon-WFButton:before {
+.icon-UMLTextBox:before {
 	content:"\f34b";
 }
 
 
-.icon-WFCheckbox:before {
+.icon-UMLTimeConstraint:before {
 	content:"\f34c";
 }
 
 
-.icon-WFDesktopFrame:before {
+.icon-UMLTimeSegment:before {
 	content:"\f34d";
 }
 
 
-.icon-WFDropdown:before {
+.icon-UMLTimeTick:before {
 	content:"\f34e";
 }
 
 
-.icon-WFFrame:before {
+.icon-UMLTimingDiagram:before {
 	content:"\f34f";
 }
 
 
-.icon-WFImage:before {
+.icon-UMLTimingLifeline:before {
 	content:"\f350";
 }
 
 
-.icon-WFInput:before {
+.icon-UMLTransition:before {
 	content:"\f351";
 }
 
 
-.icon-WFLink:before {
+.icon-UMLUseCase:before {
 	content:"\f352";
 }
 
 
-.icon-WFMobileFrame:before {
+.icon-UMLUseCaseDiagram:before {
 	content:"\f353";
 }
 
 
-.icon-WFPanel:before {
+.icon-UMLUseCaseSubject:before {
 	content:"\f354";
 }
 
 
-.icon-WFRadio:before {
+.icon-WFAvatar:before {
 	content:"\f355";
 }
 
 
-.icon-WFSeparator:before {
+.icon-WFButton:before {
 	content:"\f356";
 }
 
 
-.icon-WFSlider:before {
+.icon-WFCheckbox:before {
 	content:"\f357";
 }
 
 
-.icon-WFSwitch:before {
+.icon-WFDesktopFrame:before {
 	content:"\f358";
 }
 
 
-.icon-WFTab:before {
+.icon-WFDropdown:before {
 	content:"\f359";
 }
 
 
-.icon-WFTabList:before {
+.icon-WFFrame:before {
 	content:"\f35a";
 }
 
 
-.icon-WFText:before {
+.icon-WFImage:before {
 	content:"\f35b";
 }
 
 
-.icon-WFWebFrame:before {
+.icon-WFInput:before {
 	content:"\f35c";
 }
 
 
-.icon-WFWireframe:before {
+.icon-WFLink:before {
 	content:"\f35d";
 }
 
 
-.icon-WFWireframeDiagram:before {
+.icon-WFMobileFrame:before {
 	content:"\f35e";
+}
+
+
+.icon-WFPanel:before {
+	content:"\f35f";
+}
+
+
+.icon-WFRadio:before {
+	content:"\f360";
+}
+
+
+.icon-WFSeparator:before {
+	content:"\f361";
+}
+
+
+.icon-WFSlider:before {
+	content:"\f362";
+}
+
+
+.icon-WFSwitch:before {
+	content:"\f363";
+}
+
+
+.icon-WFTab:before {
+	content:"\f364";
+}
+
+
+.icon-WFTabList:before {
+	content:"\f365";
+}
+
+
+.icon-WFText:before {
+	content:"\f366";
+}
+
+
+.icon-WFWebFrame:before {
+	content:"\f367";
+}
+
+
+.icon-WFWireframe:before {
+	content:"\f368";
+}
+
+
+.icon-WFWireframeDiagram:before {
+	content:"\f369";
 }

@@ -379,14 +379,9 @@
         },
         { "type": "separator" },
         {
-          "label": "Enter License Key...",
-          "id": "help.enter-license-key",
-          "command": "help:enter-license-key"
-        },
-        {
-          "label": "Delete License Key...",
-          "id": "help.delete-license-key",
-          "command": "help:delete-license-key"
+          "label": "License Activation...",
+          "id": "help.license-activation",
+          "command": "help:license-activation"
         },
         { "type": "separator" },
         {

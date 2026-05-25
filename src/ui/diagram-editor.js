@@ -2137,6 +2137,7 @@ class DiagramEditor extends EventEmitter {
   constructor(config) {
     super();
     var self = this;
+    this._readonly = false;
     this.config = config;
     this.canvasId = config.canvasId;
     this.canvasElement = document.getElementById(this.canvasId);
@@ -2187,7 +2188,8 @@ class DiagramEditor extends EventEmitter {
         self.downX = e.offsetX;
         self.downY = e.offsetY;
       } else if (self.activeHandler) {
-        self.activeHandler.mouseDown(self, self.canvas, evt);
+        if (!this._readonly)
+          self.activeHandler.mouseDown(self, self.canvas, evt);
       }
     };
     this.canvasElement.onmouseup = (e) => {
@@ -2214,7 +2216,7 @@ class DiagramEditor extends EventEmitter {
         self.downX = 0;
         self.downY = 0;
       } else if (self.activeHandler) {
-        self.activeHandler.mouseUp(self, self.canvas, evt);
+        if (!this._readonly) self.activeHandler.mouseUp(self, self.canvas, evt);
       }
       self.mouseDown(evt);
     };
@@ -2248,7 +2250,8 @@ class DiagramEditor extends EventEmitter {
         self.downX = e.offsetX;
         self.downY = e.offsetY;
       } else if (self.activeHandler) {
-        self.activeHandler.mouseMove(self, self.canvas, evt);
+        if (!this._readonly)
+          self.activeHandler.mouseMove(self, self.canvas, evt);
       }
     };
     this.canvasElement.ondblclick = (e) => {

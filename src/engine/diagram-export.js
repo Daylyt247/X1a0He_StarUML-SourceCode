@@ -35,6 +35,21 @@ const BOUNDING_BOX_EXPAND = 10;
 const PDF_MARGIN = 30;
 const PDF_DEFAULT_ZOOM = 1; // Default Zoom Level
 
+const PRO_DIAGRAM_TYPES = [
+  "SysMLRequirementDiagram",
+  "SysMLBlockDefinitionDiagram",
+  "SysMLInternalBlockDiagram",
+  "SysMLParametricDiagram",
+  "BPMNDiagram",
+  "WFWireframeDiagram",
+  "AWSDiagram",
+  "GCPDiagram",
+];
+
+function isProDiagram(diagramType) {
+  return PRO_DIAGRAM_TYPES.includes(diagramType);
+}
+
 /**
  * @private
  * SVGCanavas for SVG Export
@@ -118,8 +133,9 @@ function getImageData(diagram, type) {
     canvas.context.fillRect(0, 0, canvasElement.width, canvasElement.height);
   }
 
+  const licenseStatus = app.licenseStore.getLicenseStatus();
   // Draw watermark if application is not registered
-  if (app.licenseManager.getStatus() !== true) {
+  if (licenseStatus.trial) {
     diagram.drawWatermark(
       canvas,
       canvasElement.width,
@@ -128,9 +144,9 @@ function getImageData(diagram, type) {
       12,
       "UNREGISTERED",
     );
-  } else if (app.licenseManager.getLicenseInfo().licenseType === "STD") {
+  } else if (licenseStatus.edition !== "PRO") {
     const dgmType = diagram.constructor.name;
-    if (app.licenseManager.isProDiagram(dgmType)) {
+    if (isProDiagram(dgmType)) {
       diagram.drawWatermark(
         canvas,
         canvasElement.width,
@@ -173,8 +189,9 @@ function getSVGImageData(diagram) {
   canvas.origin = new Point(-boundingBox.x1, -boundingBox.y1);
   canvas.zoomFactor = new ZoomFactor(1, 1);
 
+  const licenseStatus = app.licenseStore.getLicenseStatus();
   // Draw watermark if application is not registered
-  if (app.licenseManager.getStatus() !== true) {
+  if (licenseStatus.trial) {
     diagram.drawWatermark(
       canvas,
       boundingBox.getWidth(),
@@ -183,9 +200,9 @@ function getSVGImageData(diagram) {
       12,
       "UNREGISTERED",
     );
-  } else if (app.licenseManager.getLicenseInfo().licenseType === "STD") {
+  } else if (licenseStatus.edition !== "PRO") {
     const dgmType = diagram.constructor.name;
-    if (app.licenseManager.isProDiagram(dgmType)) {
+    if (isProDiagram(dgmType)) {
       diagram.drawWatermark(
         canvas,
         boundingBox.getWidth(),
@@ -300,7 +317,8 @@ function drawWatermarkPDF(doc, xstep, ystep, text) {
  */
 function exportToPDF(diagrams, fullPath, options) {
   var doc = new PDFDocument(options);
-  for (var name in app.fontManager.files) {
+  // eslint-disable-next-line guard-for-in
+  for (let name in app.fontManager.files) {
     const path = app.fontManager.files[name];
     doc.registerFont(name, path);
   }
@@ -321,11 +339,12 @@ function exportToPDF(diagrams, fullPath, options) {
     canvas.baseScale = Math.min(zoom, PDF_DEFAULT_ZOOM);
 
     // Draw watermark if application is not registered
-    if (app.licenseManager.getStatus() !== true) {
+    const licenseStatus = app.licenseStore.getLicenseStatus();
+    if (licenseStatus.trial) {
       drawWatermarkPDF(doc, 70, 12, "UNREGISTERED");
-    } else if (app.licenseManager.getLicenseInfo().licenseType === "STD") {
+    } else if (licenseStatus.edition !== "PRO") {
       const dgmType = diagram.constructor.name;
-      if (app.licenseManager.isProDiagram(dgmType)) {
+      if (isProDiagram(dgmType)) {
         drawWatermarkPDF(doc, 45, 12, "PRO ONLY");
       }
     }

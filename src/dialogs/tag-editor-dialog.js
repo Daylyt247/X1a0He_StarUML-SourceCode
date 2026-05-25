@@ -243,9 +243,6 @@ class TagEditorDialog {
         const attr = dataItem.attrId
           ? app.repository.get(dataItem.attrId)
           : null;
-
-        console.log(tag, attr);
-
         app.tagValueEditorDialog
           .showDialog(tag, attr)
           .then(({ buttonId, returnValue }) => {

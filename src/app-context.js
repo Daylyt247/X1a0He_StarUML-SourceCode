@@ -36,9 +36,9 @@ const SelectionManager = require("./engine/selection-manager");
 const ClipboardManager = require("./engine/clipboard-manager");
 const Engine = require("./engine/engine");
 const Factory = require("./engine/factory");
-const LicenseManager = require("./engine/license-manager");
 const FontManager = require("./engine/font-manager");
 const UpdateManager = require("./engine/update-manager");
+const LicenseStore = require("./engine/license-store");
 
 const TitlebarView = require("./views/titlebar-view");
 const SidebarView = require("./views/sidebar-view");
@@ -79,6 +79,9 @@ const IconPickerDialog = require("./dialogs/icon-picker-dialog");
 const ExtensionLoader = require("./extensibility/extension-loader");
 const Resizer = require("./utils/resizer");
 const ImageUtils = require("./utils/image-utils");
+const {
+  compatibilityResolver,
+} = require("./engine/document-compatibility-resolver");
 
 const Constants = {
   APP_EXT: ".mdj",
@@ -236,11 +239,11 @@ class AppContext extends EventEmitter {
     this.extensionLoader = new ExtensionLoader();
 
     /**
-     * An instance of LicenseManager
+     * An instance of LicenseStore
      * @private
-     * @type {LicenseManager}
+     * @type {LicenseStore}
      */
-    this.licenseManager = new LicenseManager();
+    this.licenseStore = new LicenseStore();
 
     /**
      * An instance of FontManager
@@ -428,7 +431,6 @@ class AppContext extends EventEmitter {
     this.factory.metamodelManager = this.metamodels;
     this.factory.engine = this.engine;
     this.factory.diagramManager = this.diagrams;
-    this.licenseManager.projectManager = this.project;
     this.workingDiagrams.diagramManager = this.diagrams;
     this.workingDiagrams.repository = this.repository;
     this.toolbox.repository = this.repository;
@@ -446,7 +448,7 @@ class AppContext extends EventEmitter {
     this.titlebar.project = this.project;
     this.titlebar.repository = this.repository;
     this.titlebar.metadata = this.metadata;
-    this.titlebar.licenseManager = this.licenseManager;
+    this.titlebar.licenseStore = this.licenseStore;
     this.toolbar.preferenceManager = this.preferences;
     this.statusbar.preferenceManager = this.preferences;
     this.quickedits.diagramManager = this.diagrams;
@@ -591,8 +593,7 @@ class AppContext extends EventEmitter {
     this.statusbar.htmlReady();
     this.commandPalette.htmlReady();
     this.quickFind.htmlReady();
-
-    this.licenseManager.htmlReady();
+    this.licenseStore.htmlReady();
     this.extensionManagerDialog.htmlReady();
 
     this.toast.htmlReady();
@@ -611,7 +612,7 @@ class AppContext extends EventEmitter {
     this.setupQuickEdit();
     this.setupDiagramManager();
     this.setupKeyBindings();
-    this.setupLicenseManager();
+    this.setupLicenseStore();
     this.setupPreferenceManager();
     this.setupAutoBackup();
 
@@ -672,7 +673,6 @@ class AppContext extends EventEmitter {
     this.diagrams.appReady();
     this.modelExplorer.appReady();
     this.styleEditor.appReady();
-    this.licenseManager.appReady();
 
     // Package.appReady()
 
@@ -758,10 +758,14 @@ class AppContext extends EventEmitter {
     this.htmlReady();
 
     // load keymaps
-    const keys = require(`../resources/default/keymaps/${process.platform}.json`);
+    const keys = require(
+      `../resources/default/keymaps/${process.platform}.json`,
+    );
     this.keymaps.add(keys);
     // load menus
-    const menus = require(`../resources/default/menus/${process.platform}.json`);
+    const menus = require(
+      `../resources/default/menus/${process.platform}.json`,
+    );
     this.menu.add(menus.menu);
     this.contextMenu.add(menus["context-menu"]);
     // load preferences
@@ -786,6 +790,15 @@ class AppContext extends EventEmitter {
   handleEvents() {
     ipcRenderer.on("command", (event, command, ...args) => {
       this.commands.execute(command, ...args);
+    });
+
+    ipcRenderer.on("command-trigger", async (e, command, args) => {
+      try {
+        const response = this.commands.execute(command, ...args);
+        ipcRenderer.send("command-trigger-response", response);
+      } catch (error) {
+        ipcRenderer.send("command-trigger-response", undefined, error);
+      }
     });
 
     ipcRenderer.on("focus", () => {
@@ -984,6 +997,9 @@ class AppContext extends EventEmitter {
         if (defaultDiagrams.length > 0) {
           this.diagrams.setCurrentDiagram(defaultDiagrams[0]);
         }
+
+        // resolve document compatibility issues
+        compatibilityResolver(project);
 
         // Repaint diagram after 1sec
         setTimeout(() => {
@@ -1493,8 +1509,8 @@ class AppContext extends EventEmitter {
   /**
    * @private
    */
-  setupLicenseManager() {
-    this.licenseManager.on("statusChanged", (status) => {
+  setupLicenseStore() {
+    this.licenseStore.on("statusChanged", (status) => {
       this.titlebar.update();
     });
   }

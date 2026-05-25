@@ -22,10 +22,10 @@ const { ipcRenderer, clipboard, nativeImage, shell } = require("electron");
 const { Element, EdgeView } = require("../core/core");
 const AboutDialog = require("../dialogs/about-dialog");
 const PreferenceDialog = require("../dialogs/preference-dialog");
-const EnterLicenseDialog = require("../dialogs/enter-license-dialog");
 const PrintDialog = require("../dialogs/print-dialog");
 const Strings = require("../strings");
 const CheckUpdatesDialog = require("../dialogs/check-updates-dialog");
+const LicenseActivationDialog = require("../dialogs/license-activation-dialog");
 
 const DiagramExport = require("./diagram-export");
 
@@ -1160,32 +1160,9 @@ function handleCheckForUpdates() {
   CheckUpdatesDialog.showDialog();
 }
 
-function handleEnterLicenseKey() {
-  if (app.licenseManager.getStatus() === true) {
-    app.dialogs.showInfoDialog("You already have a valid license.");
-  } else {
-    return EnterLicenseDialog.showDialog();
-  }
+function handleLicenseActivation() {
+  LicenseActivationDialog.showDialog();
   return undefined;
-}
-
-function handleDeleteLicenseKey() {
-  if (app.licenseManager.getStatus() === true) {
-    var buttonId = app.dialogs.showConfirmDialog(
-      "Do you want to delete current license key?",
-    );
-    if (buttonId === "ok") {
-      var path = app.licenseManager.findLicense();
-      fs.unlinkSync(path);
-      app.licenseManager.checkLicenseValidity();
-    }
-  } else {
-    app.dialogs.showInfoDialog("You don't have a valid license to delete.");
-    var path2 = app.licenseManager.findLicense();
-    if (path2) {
-      fs.unlinkSync(path2);
-    }
-  }
 }
 
 function handleDocumentation() {
@@ -1407,6 +1384,53 @@ function handleSetProperty(options) {
     options.model = _.get(options.model, options["set-model"]);
   }
   app.engine.setProperty(options.model, options.property, options.value);
+}
+
+function handleGetAllDiagramsInfo() {
+  const diagrams = app.repository.getInstancesOf("Diagram");
+  if (diagrams && diagrams.length > 0) {
+    const allDiagramData = diagrams.map((d) => {
+      return {
+        id: d._id,
+        type: d.getClassName(),
+        name: d.name,
+        description: d.documentation,
+      };
+    });
+    return allDiagramData;
+  } else {
+    return [];
+  }
+}
+
+function handleGetCurrentDiagramInfo() {
+  const diagram = app.diagrams.getCurrentDiagram();
+  if (diagram) {
+    return {
+      id: diagram._id,
+      type: diagram.getClassName(),
+      name: diagram.name,
+      description: diagram.documentation,
+    };
+  } else {
+    return null;
+  }
+}
+
+function handleGetDiagramImageById(diagramId) {
+  const diagram = app.repository.get(diagramId);
+  if (diagram && diagram instanceof type.Diagram) {
+    try {
+      const data = DiagramExport.getImageData(diagram, "image/png");
+      return data;
+    } catch (err) {
+      console.error("Error while getting diagram image", err);
+      return null;
+    }
+  } else {
+    console.error("Diagram not found or invalid ID:", diagramId);
+    throw new Error("Diagram not found or invalid ID: " + diagramId);
+  }
 }
 
 // Register Commands
@@ -1635,14 +1659,9 @@ app.commands.register(
   "Help: Check For Updates",
 );
 app.commands.register(
-  "help:enter-license-key",
-  handleEnterLicenseKey,
-  "Help: Enter License Key...",
-);
-app.commands.register(
-  "help:delete-license-key",
-  handleDeleteLicenseKey,
-  "Help: Delete License Key",
+  "help:license-activation",
+  handleLicenseActivation,
+  "Help: License Activation...",
 );
 app.commands.register(
   "help:documentation",
@@ -1673,8 +1692,16 @@ app.commands.register(
   handleCreateModelAndView,
 );
 // app.commands.register('factory:create-view', handleCreateView)
-
 app.commands.register("engine:set-property", handleSetProperty);
+
+// Commands for API Server
+
+app.commands.register("api:get_all_diagrams_info", handleGetAllDiagramsInfo);
+app.commands.register(
+  "api:get_current_diagram_info",
+  handleGetCurrentDiagramInfo,
+);
+app.commands.register("api:get_diagram_image_by_id", handleGetDiagramImageById);
 
 // Update Commands
 app.on("focus", updateMenus);

@@ -9076,6 +9076,24 @@ div.k-notification.k-notification-error {
 .icon-tool-gcp-icon-zone-user {
   color: #FFFFFF;
 }
+.icon-AzureDiagram {
+  color: #009944;
+}
+.icon-AzureModel {
+  color: #ad9400;
+}
+.icon-AzureGroup {
+  color: #ad9400;
+}
+.icon-AzureService {
+  color: #ad9400;
+}
+.icon-AzureCallout {
+  color: #ad9400;
+}
+.icon-AzureConnector {
+  color: #1390d6;
+}
 .icon-tool-validation-ok {
   color: #83C737;
 }
@@ -9233,21 +9251,30 @@ div.k-notification.k-notification-error {
   min-height: 20px !important;
 }
 .about-dialog .dialog-body {
-  min-width: 400px;
+  min-width: 200px;
 }
-.enter-license-dialog .dialog-body {
-  min-width: 350px;
+.license-activation-dialog .dialog-body {
+  min-width: 384px;
   min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.enter-license-dialog .dialog-body .license-key {
-  width: 350px;
-  margin-top: 5px;
+.license-activation-dialog .dialog-body input {
+  width: 100%;
   font-family: "SourceCodePro";
 }
-.unregistered-dialog .dialog-body {
-  max-width: 350px;
-  max-height: 300px;
-  min-height: 80px;
+.license-activation-dialog .dialog-body .active-status {
+  color: #1c7aed;
+  border: 1px solid #1c7aed;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1em;
+}
+.license-activation-dialog .dialog-body .device-id {
+  border: 1px solid #636668;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.3rem;
+  opacity: 0.8;
 }
 .tag-edit-dialog .dialog-body {
   min-width: 300px;
@@ -9774,6 +9801,19 @@ a {
   bottom: 0;
   background-color: #3b3f41;
   z-index: 20000;
+}
+/* ===== Utilities ========================================================= */
+.font-mono {
+  font-family: "SourceCodePro";
+}
+.text-primary {
+  color: #1c7aed;
+}
+.text-normal {
+  color: #e3e3e3;
+}
+.underline {
+  text-decoration: underline;
 }
 /* ===== Widgets =========================================================== */
 hr {
